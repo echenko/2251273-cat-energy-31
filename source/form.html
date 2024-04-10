@@ -12,11 +12,11 @@
 <body class="page-body">
   <header class="page-header">
     <h1 class="visually-hidden">Самый популярный кошачий корм Cat Energy Pro</h1>
-    <a class="header-logo" href="#">
-      <img class="image" src="#" alt="Логотип Cat Energy">
+    <a class="page-header__logo logo" href="#">
+      <img class="logo-image" src="#" alt="Логотип Cat Energy">
     </a>
-    <button type="button">Кнопка</button>
-    <nav class="navigation">
+    <button class="page-header__button" type="button">Кнопка</button>
+    <nav class="page-header__navigation navigation">
       <ul class="navigation__list">
         <li class="navigation__item">
           <a class="navigation__link" href="index.html">Главная</a>
@@ -34,94 +34,95 @@
       <p class="hero__heading">Функциональное питание для котов</p>
       <p class="hero__description">Занялся собой? Займись котом!</p>
       <img class="hero__image" src="#" alt="Фотография Cat Energy Pro Курица">
-      <a class="hero__button" href="#">Подобрать программу</a>
+      <a class="hero__button button" href="#">Подобрать программу</a>
     </section>
   </header>
   <main class="page-main">
-      <h2 class="page-main-heading">Подбор программы</h2>
-      <p class="page-main-description">Заполните анкету и мы подберем<br> программу питания для вашего кота</p>
-      <form class="form" action="https://echo.htmlacademy.ru/" method="post">
-        <fieldset class="form__fieldset">
-          <legend class="form__legend">Кот</legend>
-          <label class="form__label" for="cat-name">Имя:*
-            <input class="form__input" type="text" name="cat-name" id="cat-name" placeholder="Барсик">
-          </label>
-          <label class="form__label" for="cat-weight">Вес (кг):*
-            <input class="form__input" type="number" name="cat-weight" id="cat-weight" placeholder="7">
-          </label>
-          <label class="form__label" for="cat-age">Возраст (лет):
-            <input class="form__input" type="number" name="cat-age" id="cat-age" placeholder="7">
-          </label>
-        </fieldset>
+    <h2 class="page-main-heading">Подбор программы</h2>
+    <p class="page-main-description">Заполните анкету и мы подберем<br> программу питания для вашего кота</p>
+    <form class="form" action="https://echo.htmlacademy.ru/" method="post">
+      <fieldset class="form__fieldset fieldset">
+        <legend class="fieldset__legend">Кот</legend>
+        <label class="form__label control" for="cat-name">Имя:*
+          <input class="control__input control__input--text" type="text" name="cat-name" id="cat-name" placeholder="Барсик">
+        </label>
+        <label class="form__label control" for="cat-weight">Вес (кг):*
+          <input class="control__input control__input--text" type="number" name="cat-weight" id="cat-weight" placeholder="7">
+        </label>
+        <label class="form__label control" for="cat-age">Возраст (лет):
+          <input class="control__input control__input--text" type="number" name="cat-age" id="cat-age" placeholder="7">
+        </label>
+      </fieldset>
 
-        <fieldset class="form__fieldset">
-          <legend class="form__legend">Подобрать программу</legend>
-          <label class="form__label" for="slim">
-            <input class="form__input" type="radio" name="program" id="slim" value="slim" checked>
-            Похудение
-          </label>
-          <label class="form__label" for="pro">
-            <input class="form__input" type="radio" name="program" id="pro" value="pro">
-            Набор массы
-          </label>
-          <label class="form__label" for="help">
-            <input class="form__input" type="radio" name="program" id="help" value="help">
-            Не знаю (Нужен ваш совет)
-          </label>
-        </fieldset>
+      <fieldset class="form__fieldset fieldset">
+        <legend class="fieldset__legend">Подобрать программу</legend>
+        <label class="form__label control" for="slim">
+          <input class="control__input control__input--radio" type="radio" name="program" id="slim" value="slim" checked>
+          Похудение
+        </label>
+        <label class="form__label" for="pro">
+          <input class="form__input" type="radio" name="program" id="pro" value="pro">
+          Набор массы
+        </label>
+        <label class="form__label" for="help">
+          <input class="form__input" type="radio" name="program" id="help" value="help">
+          Не знаю (Нужен ваш совет)
+        </label>
+      </fieldset>
 
-        <fieldset class="form__fieldset">
-          <legend class="form__legend">Контактные данные (владельца кота)</legend>
-          <label class="form__label" for="owner-email">E-mail:*
-            <input class="form__input" type="email" name="owner-email" id="owner-email" placeholder="kuklachev@gmail.com">
-          </label>
-          <label class="form__label" for="owner-phone">Телефон:*
-            <input class="form__input" type="tel" name="owner-phone" id="owner-phone" placeholder="8 (960) 900-60-90">
-          </label>
-        </fieldset>
+      <fieldset class="form__fieldset">
+        <legend class="form__legend">Контактные данные (владельца кота)</legend>
+        <label class="form__label" for="owner-email">E-mail:*
+          <input class="form__input" type="email" name="owner-email" id="owner-email" placeholder="kuklachev@gmail.com">
+        </label>
+        <label class="form__label" for="owner-phone">Телефон:*
+          <input class="form__input" type="tel" name="owner-phone" id="owner-phone" placeholder="8 (960) 900-60-90">
+        </label>
+      </fieldset>
 
-        <fieldset class="form__fieldset">
-          <legend class="form__legend">Комментарий</legend>
-          <label class="form__label" for="comment">
-            <textarea class="form__textarea" name="comment" id="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
-          </label>
-        </fieldset>
+      <fieldset class="form__fieldset">
+        <legend class="form__legend">Комментарий</legend>
+        <label class="form__label" for="comment">
+          <textarea class="form__textarea" name="comment" id="comment"
+            placeholder="Расскажите обо всех повадках кота"></textarea>
+        </label>
+      </fieldset>
 
-        <fieldset class="form__fieldset">
-          <legend class="form__legend">Дополнительные опции</legend>
-          <label class="form__label" for="sweetener">
-            <input class="form__input" type="checkbox" name="sweetener" id="sweetener" value="sweetener" checked>
-            Cахарозаменитель
-          </label>
-          <label class="form__label" for="water">
-            <input class="form__input" type="checkbox" name="water" id="water" value="water">
-            Питьевая вода
-          </label>
-          <label class="form__label" for="milk">
-            <input class="form__input" type="checkbox" name="milk" id="milk" value="milk">
-            Молоко
-          </label>
-          <label class="form__label" for="vitamins">
-            <input class="form__input" type="checkbox" name="vitamins" id="vitamins" value="vitamins">
-            Витамины
-          </label>
-        </fieldset>
+      <fieldset class="form__fieldset">
+        <legend class="form__legend">Дополнительные опции</legend>
+        <label class="form__label" for="sweetener">
+          <input class="form__input" type="checkbox" name="sweetener" id="sweetener" value="sweetener" checked>
+          Cахарозаменитель
+        </label>
+        <label class="form__label" for="water">
+          <input class="form__input" type="checkbox" name="water" id="water" value="water">
+          Питьевая вода
+        </label>
+        <label class="form__label" for="milk">
+          <input class="form__input" type="checkbox" name="milk" id="milk" value="milk">
+          Молоко
+        </label>
+        <label class="form__label" for="vitamins">
+          <input class="form__input" type="checkbox" name="vitamins" id="vitamins" value="vitamins">
+          Витамины
+        </label>
+      </fieldset>
 
-        <button class="form__button" type="submit">Отправить заявку</button>
-        <p class="form__text">*Поля обязательные для заполнения</p>
+      <button class="form__button" type="submit">Отправить заявку</button>
+      <p class="form__text">*Поля обязательные для заполнения</p>
 
-      </form>
-      <section class="adress">
-        <h2 class="visually-hidden">Наш адрес в Санкт-Петербурге</h2>
-        <p class="adress__heading">Приглашаем к сотрудничеству дилеров!</p>
-        <h3 class="adress__text">ул. Б. Конюшенная, д. 19/8 Санкт-Петербург</h3>
-        <iframe src="https://yandex.ru/map-widget/v1/-/CDRPbIpb"></iframe>
-      </section>
+    </form>
+    <section class="adress">
+      <h2 class="visually-hidden">Наш адрес в Санкт-Петербурге</h2>
+      <p class="adress__heading">Приглашаем к сотрудничеству дилеров!</p>
+      <h3 class="adress__text">ул. Б. Конюшенная, д. 19/8 Санкт-Петербург</h3>
+      <iframe src="https://yandex.ru/map-widget/v1/-/CDRPbIpb"></iframe>
+    </section>
   </main>
   <footer class="page-footer">
-    <a class="footer-logo" href="#">
-      <img class="image" src="#" alt="Логотип Cat Energy">
-    </a>
+    <a class="footer-logo logo" href="#">
+      <img class="logo__image" src="#" alt="Логотип Cat Energy">
+    </a>-
     <ul class="social-list">
       <li class="social-list__item">
         <a class="social-list__link" href="#">VK</a>
