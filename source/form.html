@@ -38,85 +38,85 @@
     </section>
   </header>
   <main class="page-main">
-    <h2 class="page-main-heading">Подбор программы</h2>
-    <p class="page-main-description">Заполните анкету и мы подберем<br> программу питания для вашего кота</p>
+    <h2 class="page-main__heading">Подбор программы</h2>
+    <p class="page-main__description">Заполните анкету и мы подберем программу питания для вашего кота</p>
     <form class="form" action="https://echo.htmlacademy.ru/" method="post">
-      <fieldset class="form__fieldset fieldset">
-        <legend class="fieldset__legend">Кот</legend>
-        <label class="form__label control" for="cat-name">Имя:*
+      <fieldset class="form__group group">
+        <legend class="group__name">Кот</legend>
+        <label class="group__control control" for="cat-name">Имя:*
           <input class="control__input control__input--text" type="text" name="cat-name" id="cat-name" placeholder="Барсик">
         </label>
-        <label class="form__label control" for="cat-weight">Вес (кг):*
+        <label class="group__control control" for="cat-weight">Вес (кг):*
           <input class="control__input control__input--text" type="number" name="cat-weight" id="cat-weight" placeholder="7">
         </label>
-        <label class="form__label control" for="cat-age">Возраст (лет):
+        <label class="group__control control" for="cat-age">Возраст (лет):
           <input class="control__input control__input--text" type="number" name="cat-age" id="cat-age" placeholder="7">
         </label>
       </fieldset>
 
-      <fieldset class="form__fieldset fieldset">
-        <legend class="fieldset__legend">Подобрать программу</legend>
-        <label class="form__label control" for="slim">
+      <fieldset class="form__group group">
+        <legend class="group__name">Подобрать программу</legend>
+        <label class="group__control control" for="slim">
           <input class="control__input control__input--radio" type="radio" name="program" id="slim" value="slim" checked>
           Похудение
         </label>
-        <label class="form__label" for="pro">
-          <input class="form__input" type="radio" name="program" id="pro" value="pro">
+        <label class="group__control control" for="pro">
+          <input class="control__input control__input--radio" type="radio" name="program" id="pro" value="pro">
           Набор массы
         </label>
-        <label class="form__label" for="help">
-          <input class="form__input" type="radio" name="program" id="help" value="help">
+        <label class="group__control control" for="help">
+          <input class="control__input control__input--radio" type="radio" name="program" id="help" value="help">
           Не знаю (Нужен ваш совет)
         </label>
       </fieldset>
 
-      <fieldset class="form__fieldset">
-        <legend class="form__legend">Контактные данные (владельца кота)</legend>
-        <label class="form__label" for="owner-email">E-mail:*
-          <input class="form__input" type="email" name="owner-email" id="owner-email" placeholder="kuklachev@gmail.com">
+      <fieldset class="form__group group">
+        <legend class="group__name">Контактные данные (владельца кота)</legend>
+        <label class="group__control control" for="owner-email">E-mail:*
+          <input class="control__input control__input--text control__input--email" type="email" name="owner-email" id="owner-email" placeholder="kuklachev@gmail.com">
         </label>
-        <label class="form__label" for="owner-phone">Телефон:*
-          <input class="form__input" type="tel" name="owner-phone" id="owner-phone" placeholder="8 (960) 900-60-90">
+        <label class="group__control control" for="owner-phone">Телефон:*
+          <input class="control__input control__input--text control__input--phone" type="tel" name="owner-phone" id="owner-phone" placeholder="8 (960) 900-60-90">
         </label>
       </fieldset>
 
-      <fieldset class="form__fieldset">
-        <legend class="form__legend">Комментарий</legend>
-        <label class="form__label" for="comment">
-          <textarea class="form__textarea" name="comment" id="comment"
+      <fieldset class="form__group group">
+        <legend class="group__name">Комментарий</legend>
+        <label class="group__control control" for="comment">
+          <textarea class="control__input control__input--textarea" name="comment" id="comment"
             placeholder="Расскажите обо всех повадках кота"></textarea>
         </label>
       </fieldset>
 
-      <fieldset class="form__fieldset">
-        <legend class="form__legend">Дополнительные опции</legend>
-        <label class="form__label" for="sweetener">
-          <input class="form__input" type="checkbox" name="sweetener" id="sweetener" value="sweetener" checked>
+      <fieldset class="form__group group">
+        <legend class="group__name">Дополнительные опции</legend>
+        <label class="group__control control" for="sweetener">
+          <input class="control__input control__input--checkbox" type="checkbox" name="sweetener" id="sweetener" value="sweetener" checked>
           Cахарозаменитель
         </label>
-        <label class="form__label" for="water">
-          <input class="form__input" type="checkbox" name="water" id="water" value="water">
+        <label class="group__control control" for="water">
+          <input class="control__input control__input--checkbox" type="checkbox" name="water" id="water" value="water">
           Питьевая вода
         </label>
-        <label class="form__label" for="milk">
-          <input class="form__input" type="checkbox" name="milk" id="milk" value="milk">
+        <label class="group__control control" for="milk">
+          <input class="control__input control__input--checkbox" type="checkbox" name="milk" id="milk" value="milk">
           Молоко
         </label>
-        <label class="form__label" for="vitamins">
-          <input class="form__input" type="checkbox" name="vitamins" id="vitamins" value="vitamins">
+        <label class="group__control control" for="vitamins">
+          <input class="control__input control__input--checkbox" type="checkbox" name="vitamins" id="vitamins" value="vitamins">
           Витамины
         </label>
       </fieldset>
 
-      <button class="form__button" type="submit">Отправить заявку</button>
+      <button class="form__button button" type="submit">Отправить заявку</button>
       <p class="form__text">*Поля обязательные для заполнения</p>
 
     </form>
-    <section class="adress">
+    <section class="invite">
       <h2 class="visually-hidden">Наш адрес в Санкт-Петербурге</h2>
-      <p class="adress__heading">Приглашаем к сотрудничеству дилеров!</p>
-      <h3 class="adress__text">ул. Б. Конюшенная, д. 19/8 Санкт-Петербург</h3>
-      <iframe src="https://yandex.ru/map-widget/v1/-/CDRPbIpb"></iframe>
+      <p class="invite__heading">Приглашаем к сотрудничеству дилеров!</p>
+      <h3 class="invite__text">ул. Б. Конюшенная, д. 19/8 Санкт-Петербург</h3>
+      <iframe class="invite__map map" src="https://yandex.ru/map-widget/v1/-/CDRPbIpb"></iframe>
     </section>
   </main>
   <footer class="page-footer">
