@@ -10,10 +10,10 @@
 </head>
 
 <body class="page-body">
-  <header class="page-header">
+  <header class="page-body__page-header page-header">
     <h1 class="visually-hidden">Самый популярный кошачий корм Cat Energy Pro</h1>
     <a class="page-header__logo logo" href="#" aria-label="Логотип Cat Energy">
-      <img class="logo-image" src="#" alt="Логотип Cat Energy">
+      <img class="logo__image" src="#" alt="Логотип Cat Energy" width="190" height="38">
     </a>
     <button class="page-header__button" type="button" aria-label="Открыть меню">Меню
       <span class="visually-hidden">Меню</span>
@@ -31,28 +31,31 @@
         </li>
       </ul>
     </nav>
-    <section class="hero">
+    <section class="page-header__hero hero">
       <h2 class="visually-hidden">Cat Energy Pro Курица</h2>
       <p class="hero__heading">Функциональное питание для котов</p>
       <p class="hero__description">Занялся собой? Займись котом!</p>
-      <img class="hero__image" src="#" alt="Фотография Cat Energy Pro Курица">
+      <img class="hero__image" src="#" alt="Фотография Cat Energy Pro Курица" width="280" height="270">
       <a class="hero__button button" href="#" aria-label="Подобрать программу">Подобрать программу</a>
     </section>
   </header>
-  <main class="page-main">
+  <main class="page-body__page-main page-main">
     <h2 class="page-main__heading">Подбор программы</h2>
     <p class="page-main__description">Заполните анкету и мы подберем программу питания для вашего кота</p>
-    <form class="form" action="https://echo.htmlacademy.ru/" method="post">
+    <form class="page-main__form form" action="https://echo.htmlacademy.ru/" method="post">
       <fieldset class="form__group group">
         <legend class="group__name">Кот</legend>
         <label class="group__control control" for="cat-name">Имя:*
-          <input class="control__input control__input--text" type="text" name="cat-name" id="cat-name" placeholder="Барсик" aria-label="Имя кота">
+          <input class="control__input control__input--text" type="text" name="cat-name" id="cat-name"
+            placeholder="Барсик" aria-label="Имя кота">
         </label>
         <label class="group__control control" for="cat-weight">Вес (кг):*
-          <input class="control__input control__input--text" type="number" name="cat-weight" id="cat-weight" placeholder="7" aria-label="Вес кота">
+          <input class="control__input control__input--text" type="number" name="cat-weight" id="cat-weight"
+            placeholder="7" aria-label="Вес кота">
         </label>
         <label class="group__control control" for="cat-age">Возраст (лет):
-          <input class="control__input control__input--text" type="number" name="cat-age" id="cat-age" placeholder="7" aria-label="Возраст кота">
+          <input class="control__input control__input--text" type="number" name="cat-age" id="cat-age" placeholder="7"
+            aria-label="Возраст кота">
         </label>
       </fieldset>
 
@@ -64,12 +67,13 @@
           Похудение
         </label>
         <label class="group__control control" for="pro">
-          <input class="control__input control__input--radio" type="radio" name="program" id="pro" value="pro" aria-label="Набор массы">
+          <input class="control__input control__input--radio" type="radio" name="program" id="pro" value="pro"
+            aria-label="Набор массы">
           Набор массы
         </label>
         <label class="group__control control" for="help">
           <input class="control__input control__input--radio" type="radio" name="program" id="help" value="help"
-          aria-label="Не знаю (Нужен ваш совет)">
+            aria-label="Не знаю (Нужен ваш совет)">
           Не знаю (Нужен ваш совет)
         </label>
       </fieldset>
@@ -77,25 +81,26 @@
       <fieldset class="form__group group">
         <legend class="group__name">Контактные данные (владельца кота)</legend>
         <label class="group__control control" for="owner-email">E-mail:*
-          <input class="control__input control__input--text control__input--email" type="email" name="owner-email" id="owner-email" placeholder="kuklachev@gmail.com" aria-label="E-mail">
+          <input class="control__input control__input--text control__input--email" type="email" name="owner-email"
+            id="owner-email" placeholder="kuklachev@gmail.com" aria-label="E-mail">
         </label>
         <label class="group__control control" for="owner-phone">Телефон:*
-          <input class="control__input control__input--text control__input--phone" type="tel" name="owner-phone" id="owner-phone" placeholder="8 (960) 900-60-90" aria-label="Телефон">
+          <input class="control__input control__input--text control__input--phone" type="tel" name="owner-phone"
+            id="owner-phone" placeholder="8 (960) 900-60-90" aria-label="Телефон">
         </label>
       </fieldset>
 
       <fieldset class="form__group group">
         <legend class="group__name">Комментарий</legend>
-        <label class="group__control control" for="comment">
-          <textarea class="control__input control__input--textarea" name="comment" id="comment"
-            placeholder="Расскажите обо всех повадках кота" aria-label="Комментарий"></textarea>
-        </label>
+        <textarea class="group__control control control--comment" name="comment" id="comment"
+          placeholder="Расскажите обо всех повадках кота" aria-label="Комментарий"></textarea>
       </fieldset>
 
       <fieldset class="form__group group">
         <legend class="group__name">Дополнительные опции</legend>
         <label class="group__control control" for="sweetener">
-          <input class="control__input control__input--checkbox" type="checkbox" name="sweetener" id="sweetener" value="yes" checked aria-label="Cахарозаменитель">
+          <input class="control__input control__input--checkbox" type="checkbox" name="sweetener" id="sweetener"
+            value="yes" checked aria-label="Cахарозаменитель">
           Cахарозаменитель
         </label>
         <label class="group__control control" for="water">
@@ -104,11 +109,13 @@
           Питьевая вода
         </label>
         <label class="group__control control" for="milk">
-          <input class="control__input control__input--checkbox" type="checkbox" name="milk" id="milk" value="yes" aria-label="Молоко">
+          <input class="control__input control__input--checkbox" type="checkbox" name="milk" id="milk" value="yes"
+            aria-label="Молоко">
           Молоко
         </label>
         <label class="group__control control" for="vitamins">
-          <input class="control__input control__input--checkbox" type="checkbox" name="vitamins" id="vitamins" value="yes" aria-label="Витамины">
+          <input class="control__input control__input--checkbox" type="checkbox" name="vitamins" id="vitamins"
+            value="yes" aria-label="Витамины">
           Витамины
         </label>
       </fieldset>
@@ -119,31 +126,31 @@
       <p class="form__text">*Поля обязательные для заполнения</p>
 
     </form>
-    <section class="invite">
+    <section class="page-main__invite invite">
       <h2 class="visually-hidden">Наш адрес в Санкт-Петербурге</h2>
       <p class="invite__heading">Приглашаем к сотрудничеству дилеров!</p>
       <h3 class="invite__text">ул. Б. Конюшенная, д. 19/8 Санкт-Петербург</h3>
       <iframe class="invite__map map" src="https://yandex.ru/map-widget/v1/-/CDRPbIpb"></iframe>
     </section>
   </main>
-  <footer class="page-footer">
-    <a class="footer-logo logo" href="#" aria-label="Логотип Cat Energy">
-      <img class="logo__image" src="#" alt="Логотип Cat Energy">
+  <footer class="page-body__page-footer page-footer">
+    <a class="page-footer__logo logo" href="#" aria-label="Логотип Cat Energy">
+      <img class="logo__image" src="#" alt="Логотип Cat Energy" width="128" height="24">
     </a>-
-    <ul class="social-list">
-      <li class="social-list__item">
-        <a class="social-list__link" href="#" aria-label="VK">VK</a>
+    <ul class="page-footer__social social">
+      <li class="social__item">
+        <a class="social__link" href="#" aria-label="VK">VK</a>
       </li>
-      <li class="social-list__item">
-        <a class="social-list__link" href="#" aria-label="YouTube">YouTube</a>
+      <li class="social__item">
+        <a class="social__link" href="#" aria-label="YouTube">YouTube</a>
       </li>
-      <li class="social-list__item">
-        <a class="social-list__link" href="#" aria-label="Telegram">Telegram</a>
+      <li class="social__item">
+        <a class="social__link" href="#" aria-label="Telegram">Telegram</a>
       </li>
     </ul>
-    <a class="htmlacademy" href="#" aria-label="HTML Academy">
+    <a class="page-footer__htmlacademy htmlacademy" href="#" aria-label="HTML Academy">
       <p class="htmlacademy__text">HTML Academy</p>
-      <img class="htmlacademy__image" src="#" alt="Логотип HTML Academy">
+      <img class="htmlacademy__image" src="#" alt="Логотип HTML Academy" width="27" height="34">
     </a>
   </footer>
 </body>
