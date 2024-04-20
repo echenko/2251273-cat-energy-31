@@ -3,6 +3,25 @@
 @import "./common/global.scss";
 @import "./common/fonts.scss";
 
+/* COMMON */
+@import "./common/mixins.scss";
+
 /* BLOCKS */
 @import "./blocks/pages.scss";
-@import "./blocks/header.scss";
+@import "./blocks/button.scss";
+
+/* header */
+@import "./blocks/page-header.scss";
+@import "./blocks/navigation.scss";
+@import "./blocks/page-logo.scss";
+
+/* index */
+@import "./blocks/hero.scss";
+@import "./blocks/programs.scss";
+@import "./blocks/functional.scss";
+@import "./blocks/example.scss";
+@import "./blocks/slider.scss";
+@import "./blocks/invite.scss";
+@import "./blocks/map.scss";
+@import "./blocks/page-footer.scss";
+@import "./blocks/social.scss";

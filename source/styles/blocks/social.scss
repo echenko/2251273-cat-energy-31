@@ -1,0 +1,21 @@
+// social
+
+.social {
+  list-style-type: none;
+  margin: 0;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 2px;
+}
+
+.social__link {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  min-width: 28px;
+  min-height: 22px;
+  background-color: $bg-color-special;
+  padding: 10px;
+}
+
