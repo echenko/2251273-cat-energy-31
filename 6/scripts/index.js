@@ -1,0 +1,1 @@
+var t=document.querySelector(".navigation__list"),e=document.querySelector(".page-header__button");t.classList.remove("navigation__list--no-js");e.addEventListener("click",()=>{t.classList.toggle("navigation__list--closed")});
