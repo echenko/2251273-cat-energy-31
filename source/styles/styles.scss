@@ -6,7 +6,7 @@
 /* COMMON */
 @import "./common/mixins.scss";
 
-/* BLOCKS */
+/* blocks */
 @import "./blocks/pages.scss";
 @import "./blocks/button.scss";
 
@@ -25,3 +25,8 @@
 @import "./blocks/map.scss";
 @import "./blocks/page-footer.scss";
 @import "./blocks/social.scss";
+
+/* catalog */
+@import "./blocks/catalog.scss";
+@import "./blocks/card.scss";
+@import "./blocks/description.scss";

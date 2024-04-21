@@ -1,9 +1,30 @@
 // social
 
 .social {
-  list-style-type: none;
-  margin: 0;
-  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.social::after {
+  content: "";
+  flex-grow: 1;
+  width: 100%;
+  height: 2px;
+  background-color: $decoration-color-primary;
+}
+
+.social::before {
+  content: "";
+  flex-grow: 1;
+  width: 100%;
+  height: 2px;
+  background-color: $decoration-color-primary;
+}
+
+
+.social__list {
+  @include list-reset;
   display: flex;
   justify-content: center;
   gap: 2px;

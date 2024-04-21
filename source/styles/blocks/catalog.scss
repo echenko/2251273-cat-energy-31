@@ -1,0 +1,29 @@
+// catalog
+
+.page-main__catalog {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  gap: 41px;
+}
+
+.catalog__heading {
+  font-family: $font-family-primary;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 100%;
+  color: $text-color-main;
+  margin: 0;
+  padding: 27px 20px 20px;
+}
+
+.catalog__list {
+  @include list-reset;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.catalog__item {
+  padding: 20px;
+  border-top: 2px solid $decoration-color-main;
+}

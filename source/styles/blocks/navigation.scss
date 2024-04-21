@@ -23,19 +23,6 @@
   position: static;
 }
 
-.navigation__item {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-}
-
-.navigation__item::before {
-  content: "";
-  left: 0;
-  right: 0;
-  border-bottom: 2px solid $decoration-color-main;
-}
-
 .navigation__link {
   display: flex;
   flex-direction: column;
@@ -48,6 +35,7 @@
   line-height: 100%;
   text-transform: uppercase;
   color: $text-color-main;
+  border-bottom: 2px solid $decoration-color-main;
 }
 
 @media (min-width: $tablet-width) {
