@@ -11,4 +11,13 @@
   color: $text-color-secondary;
   text-decoration: none;
   padding: 10px;
+  border: none;
+}
+
+.button:hover {
+  background-color: $bg-color-hover;
+}
+
+.button:active {
+  color: rgba($color: $text-color-secondary, $alpha: 0.3);
 }

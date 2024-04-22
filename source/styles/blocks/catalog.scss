@@ -21,6 +21,7 @@
   @include list-reset;
   display: grid;
   grid-template-columns: 1fr;
+  border-bottom: 2px solid $decoration-color-main;
 }
 
 .catalog__item {

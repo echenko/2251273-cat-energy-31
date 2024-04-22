@@ -1,0 +1,105 @@
+// other
+
+.other {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 39px;
+  padding: 0 20px;
+}
+
+.other__heading {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 25px 0 0;
+  font-family: $font-family-primary;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 100%;
+  color: $text-color-main;
+}
+
+.other__list {
+  @include list-reset;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.other__item {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 13px 0 19px;
+  gap: 13px;
+  border-bottom: 2px solid $decoration-color-main;
+}
+
+.other__item:first-child {
+  border-top: 2px solid $decoration-color-main;
+}
+
+.other__title {
+  grid-column: 1/-1;
+  margin: 0;
+  font-family: $font-family-primary;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 100%;
+  color: $text-color-main;
+}
+
+.other__text {
+  margin: 0;
+  font-family: $font-family-secondary;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 129%;
+  color: $text-color-special;
+}
+
+.other__price {
+  justify-self: flex-end;
+  margin: 0;
+  font-family: $font-family-secondary;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 129%;
+  color: $text-color-special;
+}
+
+.other__button {
+  grid-column: 1/-1;
+}
+
+.other__gifts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 48px;
+  width: 100%;
+  min-height: 290px;
+  padding: 60px 0;
+  background-color: $bg-color-secondary;
+  background-image: image-set(url("../../images/other/background-gifts@1x.webp") 1x, url("../../images/other/background-gifts@2x.jpg") 2x);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.other__gifts::before {
+  content: "";
+  display: block;
+  width: 78px;
+  height: 80px;
+  background-color: $decoration-color-main;
+}
+
+.other__gifts-text {
+  width: 60%;
+  margin: 0;
+  font-family: $font-family-secondary;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 125%;
+  text-align: center;
+  color: $text-color-secondary;
+}

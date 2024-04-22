@@ -6,9 +6,21 @@
   gap: 14px 0;
 }
 
+.card--all {
+  grid-template-columns: 1fr;
+  justify-items: stretch;
+  gap: 21px;
+}
+
 .card__link {
   display: flex;
   text-decoration: none;
+}
+
+.card__link--all {
+  flex-direction: column;
+  justify-content: center;
+  gap: 8px;
 }
 
 .card__link--image {
@@ -29,6 +41,37 @@
   color: $text-color-normal;
 }
 
+.card__title--all {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 23;
+}
+
+.card__title--all::before {
+  content: "";
+  width: 30px;
+  height: 30px;
+  background-color: $decoration-color-primary;
+}
+
 .card__button {
   grid-column: 1/-1;
+  margin: 3px 0 0;
+}
+
+.card__button--all {
+  margin: 0;
+}
+
+.card__text {
+  margin: 0;
+  font-family: $font-family-primary;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 133%;
+  text-align: center;
+  color: $text-color-special;
 }

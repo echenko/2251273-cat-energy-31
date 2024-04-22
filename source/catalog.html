@@ -17,7 +17,6 @@
 </head>
 
 <body class="page-html__page-body page-body">
-
   <header class="page-body__page-header page-header">
     <h1 class="visually-hidden">Самый популярный кошачий корм Cat Energy Pro</h1>
     <div class="page-header__wrapper">
@@ -237,11 +236,11 @@
               <span class="description__term">Масса</span>
               <span class="description__definition">500 г</span>
             </li>
-            <li>
+            <li class="description__item">
               <span class="description__term">Вкус</span>
               <span class="description__definition">Гречка</span>
             </li>
-            <li>
+            <li class="description__item">
               <span class="description__term">Цена</span>
               <span class="description__definition">700 Р.</span>
             </li>
@@ -326,13 +325,12 @@
           </ul>
           <button class="card__button button" type="button" aria-label="Заказать">Заказать</button>
         </li>
-        <li class="catalog__item card">
-          <a class="card__link" href="#" aria-label="Показать еще 100500 товаров">
-            <img class="card__image" src="#" alt="Показать еще 100500 товаров" width="30" height="30">
+        <li class="catalog__item card card--all">
+          <a class="card__link card__link--all" href="#">
+            <h3 class="card__title card__title--all">Показать еще 100500 товаров</h3>
+            <p class="card__text">На самом деле вкусов гораздо больше!</p>
           </a>
-          <h3 class="card__title">Показать еще 100500 товаров</h3>
-          <p class="card__description">На самом деле вкуса всегда гораздо больше!</p>
-          <button class="card__button button" type="button" aria-label="Показать все">Показать все</button>
+          <button class="card__button card__button--all button" type="button" aria-label="Показать все">Показать все</button>
         </li>
       </ul>
     </section>
@@ -340,7 +338,7 @@
       <h2 class="other__heading">Дополнительные товары</h2>
       <ul class="other__list">
         <li class="other__item">
-          <h3 class="other__title ">Сахарозаменитель</h3>
+          <h3 class="other__title">Сахарозаменитель</h3>
           <p class="other__text">1 упаковка (100 г)</p>
           <p class="other__price">200 Р</p>
           <button class="other__button button" type="button" aria-label="Заказать">Заказать</button>
@@ -364,10 +362,20 @@
           <button class="other__button button" type="button" aria-label="Заказать">Заказать</button>
         </li>
       </ul>
+      <div class="other__gifts">
+        <p class="other__gifts-text">Закажите все и получите чехол для кота в подарок!</p>
+      </div>
     </section>
-    <aside class="page-main__gifts gifts">
-      <p class="gifts__text">Закажите все и получите чехол для кота в подарок!</p>
-    </aside>
+    <section class="page-main__subscription subscription">
+      <h2 class="subscription__heading">Акции и новинки</h2>
+      <p class="subscription__text">Подпишитесь на наши новости и не пропустите ни одного предложения!</p>
+      <form class="subscription__form form" action="https://echo.htmlacademy.ru/" method="post">
+        <label class="form__control control" for="email">
+          <input class="control__input" type="email" name="email" id="email" placeholder="кuklachev@gmail.com" required>
+        </label>
+        <button class="form__button button" type="submit">Подписаться</button>
+      </form>
+    </section>
     <section class="page-main__invite invite">
       <h2 class="visually-hidden">Наш адрес в Санкт-Петербурге</h2>
       <p class="invite__heading">Приглашаем к сотрудничеству дилеров!</p>
@@ -375,7 +383,6 @@
       <iframe class="invite__map map" src="https://yandex.ru/map-widget/v1/-/CDRPbIpb"></iframe>
     </section>
   </main>
-
   <footer class="page-body__page-footer page-footer">
     <a class="page-footer__logo logo" href="#" aria-label="Логотип Cat Energy">
       <img class="logo__image" src="images/logo/footer-logo.svg" alt="Логотип Cat Energy" width="128" height="24">
@@ -395,7 +402,8 @@
     </div>
     <a class="page-footer__htmlacademy htmlacademy" href="#" aria-label="HTML Academy">
       <p class="htmlacademy__text">HTML Academy</p>
-      <img class="htmlacademy__image" src="images/logo/html-academy.svg" alt="Логотип HTML Academy" width="27" height="34">
+      <img class="htmlacademy__image" src="images/logo/html-academy.svg" alt="Логотип HTML Academy" width="27"
+        height="34">
     </a>
   </footer>
   <script src="js/index.js"></script>

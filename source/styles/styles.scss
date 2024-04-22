@@ -7,7 +7,7 @@
 @import "./common/mixins.scss";
 
 /* blocks */
-@import "./blocks/pages.scss";
+@import "./blocks/page-html.scss";
 @import "./blocks/button.scss";
 
 /* header */
@@ -30,3 +30,7 @@
 @import "./blocks/catalog.scss";
 @import "./blocks/card.scss";
 @import "./blocks/description.scss";
+@import "./blocks/other.scss";
+@import "./blocks/subscription.scss";
+@import "./blocks/form.scss";
+@import "./blocks/control.scss";
