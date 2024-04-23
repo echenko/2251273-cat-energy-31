@@ -1,10 +1,8 @@
 /* GLOBAL */
 @import "./common/variables.scss";
+@import "./common/mixins.scss";
 @import "./common/global.scss";
 @import "./common/fonts.scss";
-
-/* COMMON */
-@import "./common/mixins.scss";
 
 /* blocks */
 @import "./blocks/page-html.scss";

@@ -9,7 +9,7 @@
 
 .other__heading {
   display: flex;
-  flex-direction: column;
+  // flex-direction: column;
   margin: 0;
   padding: 25px 0 0;
   font-family: $font-family-primary;
@@ -17,6 +17,14 @@
   font-size: 24px;
   line-height: 100%;
   color: $text-color-main;
+}
+
+.other__heading::after {
+  content: "";
+  flex-grow: 1;
+  height: 2px;
+  background-color: $bg-color-secondary;
+  transform: translateX(20px) translateY(10px);
 }
 
 .other__list {
