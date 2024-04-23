@@ -1,9 +1,5 @@
 // example
 
-.page-main__example {
-  padding: 25px 20px 40px;
-}
-
 .example {
   display: grid;
   grid-template-columns: 1fr;
@@ -48,9 +44,10 @@
   font-size: 24px;
   line-height: 100%;
   color: $text-color-main;
-  padding: 14px 20px 17px;
+  padding: 12px 0 17px;
   border: 2px solid $decoration-color-secondary;
   border-radius: 4px;
+  text-transform: uppercase;
 }
 
 .example__definition {
@@ -73,4 +70,8 @@
   text-transform: uppercase;
   text-align: center;
   color: $text-color-main;
+}
+
+.example__slider {
+  margin: 0 auto;
 }

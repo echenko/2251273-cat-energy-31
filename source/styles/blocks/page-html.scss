@@ -16,6 +16,26 @@
   flex-grow: 1;
 }
 
+.page-main__catalog {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.page-main__example {
+  padding: 25px 20px 40px;
+}
+
+.page-main__functional {
+  padding: 3px 20px 50px;
+}
+
+.page-body__page-footer {
+  padding: 15px 20px 20px;
+  background-color: $bg-color-primary;
+}
+
 @media (min-width: $tablet-width) {
   .page-html__body {
     width: $tablet-width;

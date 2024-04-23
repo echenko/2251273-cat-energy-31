@@ -3,7 +3,7 @@
 .card {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 14px 0;
+  gap: 17px 0;
 }
 
 .card--all {
@@ -30,6 +30,12 @@
   align-items: center;
 }
 
+.card__image {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
 .card__title {
   width: 70%;
   margin: 0;
@@ -47,7 +53,7 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  gap: 23;
+  gap: 26px;
 }
 
 .card__title--all::before {
@@ -59,7 +65,7 @@
 
 .card__button {
   grid-column: 1/-1;
-  margin: 3px 0 0;
+  margin: 0;
 }
 
 .card__button--all {
@@ -68,7 +74,7 @@
 
 .card__text {
   margin: 0;
-  font-family: $font-family-primary;
+  font-family: $font-family-secondary;
   font-weight: 400;
   font-size: 12px;
   line-height: 133%;

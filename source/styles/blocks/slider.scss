@@ -1,6 +1,4 @@
-.example__slider {
-  margin: 0 auto;
-}
+// slider
 
 .slider {
   position: relative;
@@ -24,9 +22,6 @@
   justify-content: end;
 }
 
-// .slider__image {
-// }
-
 .slider__control {
   position: absolute;
   width: 4px;
@@ -34,13 +29,15 @@
   background-color: $bg-color-special;
   border-radius: 2px;
   left: 50%;
+  transform: translateX(-50%);
 }
 
 .slider__control::before {
   content: "";
-  width: 20px;
-  height: 20px;
+  width: 40px;
+  height: 40px;
   background-color: $bg-color-main;
+  border: 2px solid $decoration-color-secondary;
   border-radius: 50%;
   position: absolute;
   top: 50%;
