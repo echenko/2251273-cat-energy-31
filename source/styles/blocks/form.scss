@@ -1,6 +1,25 @@
 // form
 
+.form {
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
+  margin: 0;
+  border: none;
+}
+
 .form__control {
   display: flex;
   flex-direction: column;
+}
+
+.form__button {
+  margin: 27px 0 0;
+}
+
+.form__text {
+  @include font-family($font-family-secondary, 400, 14px, 114%);
+  margin: 20px 0 33px;
+  text-align: center;
+  color: $text-color-main;
 }

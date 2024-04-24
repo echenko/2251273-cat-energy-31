@@ -1,12 +1,65 @@
 // control
 
+.control {
+  display: flex;
+  gap: 13px;
+}
+
 .control__input {
-  font-family: $font-family-primary;
-  font-weight: 400;
-  font-size: 20px;
+  @include font-family($font-family-primary, 400, 16px);
   text-transform: uppercase;
   color: $text-color-special;
   margin: 0;
-  padding: 13px;
+  padding: 9px 14px;
   border: 2px solid $decoration-color-primary;
+}
+
+.control__input--medium {
+  @include font-family($font-family-primary, 400, 20px);
+}
+
+.control__input--text {
+  flex-grow: 1;
+}
+
+.control__name {
+  @include font-family($font-family-primary, 400, 16px, 112%);
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  text-transform: uppercase;
+  color: $text-color-special;
+}
+
+.control__name--radio {
+  gap: 13px;
+}
+
+.control__name--radio::before {
+  content: "";
+  width: 28px;
+  height: 28px;
+  border: 2px solid $decoration-color-primary;
+  border-radius: 50%;
+}
+
+.control__input--radio:checked + .control__name--radio::before {
+  background-color: $bg-color-secondary;
+}
+
+.control__name--checkbox::before {
+  content: "";
+  width: 26px;
+  height: 26px;
+  border: 2px solid $decoration-color-primary;
+}
+
+.control__input--checkbox:checked + .control__name--checkbox::before {
+  background-color: $bg-color-secondary;
+}
+
+.control--comment {
+  @include font-family($font-family-primary, 400, 16px, 112%);
+  padding: 19px 14px;
+  text-transform: uppercase;
 }

@@ -6,12 +6,18 @@
 
 /* blocks */
 @import "./blocks/page-html.scss";
+@import "./blocks/page-body.scss";
+@import "./blocks/page-main.scss";
 @import "./blocks/button.scss";
 
 /* header */
 @import "./blocks/page-header.scss";
 @import "./blocks/navigation.scss";
 @import "./blocks/page-logo.scss";
+
+// footer
+@import "./blocks/page-footer.scss";
+@import "./blocks/social.scss";
 
 /* index */
 @import "./blocks/hero.scss";
@@ -21,8 +27,6 @@
 @import "./blocks/slider.scss";
 @import "./blocks/invite.scss";
 @import "./blocks/map.scss";
-@import "./blocks/page-footer.scss";
-@import "./blocks/social.scss";
 
 /* catalog */
 @import "./blocks/catalog.scss";
@@ -30,5 +34,8 @@
 @import "./blocks/description.scss";
 @import "./blocks/other.scss";
 @import "./blocks/subscription.scss";
+
+// form
 @import "./blocks/form.scss";
 @import "./blocks/control.scss";
+@import "./blocks/group.scss";
