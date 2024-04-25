@@ -21,7 +21,7 @@
   <header class="page-body__page-header page-header">
     <h1 class="visually-hidden">Самый популярный кошачий корм Cat Energy Pro</h1>
     <div class="page-header__wrapper">
-      <a class="page-header__logo page-logo" href="#" aria-label="Логотип Cat Energy">
+      <a class="page-header__logo page-logo" href="index.html" aria-label="Логотип Cat Energy">
         <picture>
           <source media="(min-width: 1440px)" srcset="images/logo/page-logo-desktop.svg" width="202" height="59"
             type="image/svg+xml">
@@ -62,41 +62,44 @@
         </label>
         <label class="group__control control" for="cat-weight">
           <span class="control__name">Вес (кг):*</span>
-          <input class="control__input control__input--text" type="number" name="cat-weight" id="cat-weight"
-            placeholder="7" aria-label="Вес кота" required>
+          <input class="control__input control__input--text control__input--number" type="number" name="cat-weight"
+            id="cat-weight" placeholder="7" aria-label="Вес кота" required min="0">
         </label>
         <label class="group__control control" for="cat-age">
           <span class="control__name">Возраст (лет):</span>
-          <input class="control__input control__input--text" type="number" name="cat-age" id="cat-age" placeholder="7"
-            aria-label="Возраст кота">
+          <input class="control__input control__input--text control__input--number" type="number" name="cat-age"
+            id="cat-age" placeholder="7" aria-label="Возраст кота" min="0">
         </label>
       </fieldset>
 
       <fieldset class="form__group group group--program">
         <legend class="group__name visually-hidden">Подобрать программу</legend>
         <label class="group__control control" for="slim">
-          <input class="visually-hidden control__input control__input--radio" type="radio" name="program" id="slim" value="slim" checked
-            aria-label="Похудение">
+          <input class="visually-hidden control__input control__input--radio" type="radio" name="program" id="slim"
+            value="slim" checked aria-label="Похудение">
+          <span class="control__mark control__mark--radio"></span>
           <span class="control__name control__name--radio">Похудение</span>
         </label>
         <label class="group__control control" for="pro">
-          <input class="visually-hidden control__input control__input--radio" type="radio" name="program" id="pro" value="pro"
-            aria-label="Набор массы">
+          <input class="visually-hidden control__input control__input--radio" type="radio" name="program" id="pro"
+            value="pro" aria-label="Набор массы">
+          <span class="control__mark control__mark--radio"></span>
           <span class="control__name control__name--radio">Набор массы</span>
         </label>
         <label class="group__control control" for="help">
-          <input class="visually-hidden control__input control__input--radio" type="radio" name="program" id="help" value="help"
-            aria-label="Не знаю (Нужен ваш совет)">
+          <input class="visually-hidden control__input control__input--radio" type="radio" name="program" id="help"
+            value="help" aria-label="Не знаю (Нужен ваш совет)">
+          <span class="control__mark control__mark--radio"></span>
           <span class="control__name control__name--radio">Не знаю (Нужен ваш совет)</span>
         </label>
       </fieldset>
       <fieldset class="form__group group group--contacts">
         <legend class="group__name visually-hidden">Контактные данные (владельца кота)</legend>
-        <span class="group__title" >Контактные данные (владельца кота)</span>
-        <label class="group__control control" for="owner-email">
+        <span class="group__title">Контактные данные (владельца кота)</span>
+        <label class="group__control control" for="email">
           <span class="control__name">E-mail:*</span>
-          <input class="control__input control__input--text" type="email" name="owner-email"
-            id="owner-email" placeholder="kuklachev@gmail.com" aria-label="E-mail" required>
+          <input class="control__input control__input--text" type="email" name="email" id="email"
+            placeholder="kuklachev@gmail.com" aria-label="E-mail" required>
         </label>
         <label class="group__control control" for="owner-phone">
           <span class="control__name">Телефон:*</span>
@@ -116,23 +119,27 @@
         <legend class="group__name visually-hidden">Дополнительно</legend>
         <span class="group__title">Дополнительно</span>
         <label class="group__control control" for="sweetener">
-          <input class="visually-hidden control__input control__input--checkbox" type="checkbox" name="sweetener" id="sweetener"
-            value="yes" checked aria-label="Cахарозаменитель">
+          <input class="visually-hidden control__input control__input--checkbox" type="checkbox" name="sweetener"
+            id="sweetener" value="yes" checked aria-label="Cахарозаменитель">
+          <span class="control__mark control__mark--checkbox"></span>
           <span class="control__name control__name--checkbox">Cахарозаменитель</span>
         </label>
         <label class="group__control control" for="water">
-          <input class="visually-hidden control__input control__input--checkbox" type="checkbox" name="water" id="water" value="yes"
-            aria-label="Питьевая вода">
+          <input class="visually-hidden control__input control__input--checkbox" type="checkbox" name="water" id="water"
+            value="yes" aria-label="Питьевая вода">
+          <span class="control__mark control__mark--checkbox"></span>
           <span class="control__name control__name--checkbox">Питьевая вода</span>
         </label>
         <label class="group__control control" for="milk">
-          <input class="visually-hidden control__input control__input--checkbox" type="checkbox" name="milk" id="milk" value="yes"
-            aria-label="Молоко">
+          <input class="visually-hidden control__input control__input--checkbox" type="checkbox" name="milk" id="milk"
+            value="yes" aria-label="Молоко">
+          <span class="control__mark control__mark--checkbox"></span>
           <span class="control__name control__name--checkbox">Молоко</span>
         </label>
         <label class="group__control control" for="vitamins">
-          <input class="visually-hidden control__input control__input--checkbox" type="checkbox" name="vitamins" id="vitamins"
-            value="yes" aria-label="Витамины">
+          <input class="visually-hidden control__input control__input--checkbox" type="checkbox" name="vitamins"
+            id="vitamins" value="yes" aria-label="Витамины">
+          <span class="control__mark control__mark--checkbox"></span>
           <span class="control__name control__name--checkbox">Витамины</span>
         </label>
       </fieldset>

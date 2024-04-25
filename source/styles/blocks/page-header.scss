@@ -8,6 +8,7 @@
 .page-header__wrapper {
   display: grid;
   grid-template-columns: 1fr auto;
+  gap: 10px;
   align-items: center;
   padding: 14px 20px 12px;
   border-bottom: 2px solid $decoration-color-main;
@@ -34,6 +35,11 @@
 }
 
 @media (min-width: $tablet-width) {
+  .page-header {
+    grid-template-columns: auto 1fr;
+    padding: 0 25px;
+  }
+
   .page-header__button {
     display: none;
   }

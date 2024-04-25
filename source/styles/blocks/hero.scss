@@ -47,3 +47,9 @@
 .hero__button {
   margin: 0 20px;
 }
+
+@media (min-width: $tablet-width) {
+  .hero__wrapper {
+    background-image: none;
+  }
+}

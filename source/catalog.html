@@ -54,7 +54,7 @@
       <h2 class="catalog__heading">Каталог продукции</h2>
       <ul class="catalog__list">
         <li class="catalog__item card">
-          <a class="card__link card__link--image" href="#" aria-label="Cat Energy PRO 500 г">
+          <a class="card__link card__link--image" href="index.html" aria-label="Cat Energy PRO 500 г">
             <picture>
               <!-- webp -->
               <source type="image/webp" media="(min-width: 768px)"
@@ -209,7 +209,6 @@
           </ul>
           <button class="card__button button" type="button" aria-label="Заказать">Заказать</button>
         </li>
-
         <li class="catalog__item card">
           <a class="card__link card__link--image" href="#" aria-label="Cat Energy PRO 500 г">
             <picture>
@@ -372,9 +371,11 @@
       <h2 class="subscription__heading">Акции и новинки</h2>
       <p class="subscription__text">Подпишитесь на наши новости и не пропустите ни одного предложения!</p>
       <form class="subscription__form form" action="https://echo.htmlacademy.ru/" method="post">
-        <label class="form__control control" for="email">
-          <input class="control__input control__input--medium control__input--text" type="email" name="email" id="email" placeholder="кuklachev@gmail.com" required>
+        <label class="form__control control" for="owner-email">
+          <input class="control__input control__input--medium control__input--text" type="email" name="owner-email" id="owner-email"
+            placeholder="kuklachev@gmail.com" aria-label="E-mail" required>
         </label>
+
         <button class="form__button button button--base" type="submit">Подписаться</button>
       </form>
     </section>

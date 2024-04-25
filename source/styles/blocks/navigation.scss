@@ -40,6 +40,12 @@
 
 @media (min-width: $tablet-width) {
   .navigation__list {
-    display: block;
+    display: flex;
+    justify-content: end;
+    flex-direction: row;
+  }
+
+  .navigation__link {
+    border: none;
   }
 }

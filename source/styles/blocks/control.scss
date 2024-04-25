@@ -3,10 +3,14 @@
 .control {
   display: flex;
   gap: 13px;
+  flex-wrap: wrap;
 }
 
 .control__input {
   @include font-family($font-family-primary, 400, 16px);
+  box-sizing: border-box;
+  flex-grow: 1;
+  width: 50%;
   text-transform: uppercase;
   color: $text-color-special;
   margin: 0;
@@ -18,8 +22,29 @@
   @include font-family($font-family-primary, 400, 20px);
 }
 
-.control__input--text {
-  flex-grow: 1;
+// .control__input--text {
+//   width: 50%;
+// }
+
+// .control__input--number {
+// }
+
+.control__mark {
+  width: 28px;
+  height: 28px;
+  border: 2px solid $decoration-color-primary;
+}
+
+.control__mark--radio {
+  border-radius: 50%;
+}
+
+.control__input:checked + .control__mark--radio {
+  background-color: $bg-color-secondary;
+}
+
+.control__input:checked + .control__mark--checkbox {
+  background-color: $bg-color-secondary;
 }
 
 .control__name {
@@ -31,35 +56,8 @@
   color: $text-color-special;
 }
 
-.control__name--radio {
-  gap: 13px;
-}
-
-.control__name--radio::before {
-  content: "";
-  width: 28px;
-  height: 28px;
-  border: 2px solid $decoration-color-primary;
-  border-radius: 50%;
-}
-
-.control__input--radio:checked + .control__name--radio::before {
-  background-color: $bg-color-secondary;
-}
-
-.control__name--checkbox::before {
-  content: "";
-  width: 26px;
-  height: 26px;
-  border: 2px solid $decoration-color-primary;
-}
-
-.control__input--checkbox:checked + .control__name--checkbox::before {
-  background-color: $bg-color-secondary;
-}
-
 .control--comment {
   @include font-family($font-family-primary, 400, 16px, 112%);
-  padding: 19px 14px;
+  padding: 19px 12px;
   text-transform: uppercase;
 }

@@ -32,3 +32,12 @@
 .button:active {
   color: rgba($color: $text-color-secondary, $alpha: 0.3);
 }
+
+.button--secondary:hover {
+  background-color: $bg-color-special-hover;
+}
+
+.button--secondary:active {
+  background-color: $bg-color-special-hover;
+  color: rgba($color: $text-color-special, $alpha: 0.3);
+}
