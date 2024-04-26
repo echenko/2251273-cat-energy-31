@@ -75,19 +75,19 @@
       <fieldset class="form__group group group--program">
         <legend class="group__name visually-hidden">Подобрать программу</legend>
         <label class="group__control control" for="slim">
-          <input class="visually-hidden control__input control__input--radio" type="radio" name="program" id="slim"
+          <input class="visually-hidden control__input control__input--radio" type="radio" name="cat-program" id="slim"
             value="slim" checked aria-label="Похудение">
           <span class="control__mark control__mark--radio"></span>
           <span class="control__name control__name--radio">Похудение</span>
         </label>
         <label class="group__control control" for="pro">
-          <input class="visually-hidden control__input control__input--radio" type="radio" name="program" id="pro"
+          <input class="visually-hidden control__input control__input--radio" type="radio" name="cat-program" id="pro"
             value="pro" aria-label="Набор массы">
           <span class="control__mark control__mark--radio"></span>
           <span class="control__name control__name--radio">Набор массы</span>
         </label>
         <label class="group__control control" for="help">
-          <input class="visually-hidden control__input control__input--radio" type="radio" name="program" id="help"
+          <input class="visually-hidden control__input control__input--radio" type="radio" name="cat-program" id="help"
             value="help" aria-label="Не знаю (Нужен ваш совет)">
           <span class="control__mark control__mark--radio"></span>
           <span class="control__name control__name--radio">Не знаю (Нужен ваш совет)</span>
@@ -96,9 +96,9 @@
       <fieldset class="form__group group group--contacts">
         <legend class="group__name visually-hidden">Контактные данные (владельца кота)</legend>
         <span class="group__title">Контактные данные (владельца кота)</span>
-        <label class="group__control control" for="email">
+        <label class="group__control control" for="owner-email">
           <span class="control__name">E-mail:*</span>
-          <input class="control__input control__input--text" type="email" name="email" id="email"
+          <input class="control__input control__input--text" type="email" name="email" id="owner-email"
             placeholder="kuklachev@gmail.com" aria-label="E-mail" required>
         </label>
         <label class="group__control control" for="owner-phone">
@@ -111,7 +111,7 @@
       <fieldset class="form__group group group--comment">
         <legend class="group__name visually-hidden">Комментарий</legend>
         <span class="group__title">Комментарий</span>
-        <textarea class="group__control control control--comment" name="comment" id="comment"
+        <textarea class="group__control control control--comment" name="comment" id="owner-comment"
           placeholder="Расскажите обо всех повадках кота" aria-label="Комментарий" rows="6"></textarea>
       </fieldset>
 
@@ -160,19 +160,17 @@
     <a class="page-footer__logo logo" href="#" aria-label="Логотип Cat Energy">
       <img class="logo__image" src="images/logo/footer-logo.svg" alt="Логотип Cat Energy" width="128" height="24">
     </a>
-    <div class="page-footer__social social">
-      <ul class="social__list">
-        <li class="social__item">
-          <a class="social__link" href="#" aria-label="VK"></a>
-        </li>
-        <li class="social__item">
-          <a class="social__link" href="#" aria-label="YouTube"></a>
-        </li>
-        <li class="social__item">
-          <a class="social__link" href="#" aria-label="Telegram"></a>
-        </li>
-      </ul>
-    </div>
+    <ul class="page-footer__social social">
+      <li class="social__item">
+        <a class="social__link" href="#" aria-label="VK"></a>
+      </li>
+      <li class="social__item">
+        <a class="social__link" href="#" aria-label="YouTube"></a>
+      </li>
+      <li class="social__item">
+        <a class="social__link" href="#" aria-label="Telegram"></a>
+      </li>
+    </ul>
     <a class="page-footer__htmlacademy htmlacademy" href="#" aria-label="HTML Academy">
       <p class="htmlacademy__text">HTML Academy</p>
       <img class="htmlacademy__image" src="images/logo/html-academy.svg" alt="Логотип HTML Academy" width="27"
