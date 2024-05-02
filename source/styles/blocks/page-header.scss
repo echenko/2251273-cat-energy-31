@@ -15,13 +15,52 @@
 }
 
 .page-header__button {
+  position: relative;
   box-sizing: border-box;
   display: flex;
   min-width: 38px;
   min-height: 38px;
   border: none;
   padding: 0;
-  background-color: $decoration-color-main;
+  background-color: $bg-color-main;
+}
+
+.page-header__button::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  width: 24px;
+  height: 4px;
+  transform: translate(50%, -50%);
+  background-color: $text-color-main;
+  box-shadow: 0 10px 0 0 $text-color-main, 0 -10px 0 0 $text-color-main;
+  transition: all 0.3s ease;
+}
+
+.page-header__button--closed::before {
+  transform: translate(50%, -50%) rotate(45deg);
+  box-shadow: none;
+  transition: all 0.3s ease;
+}
+
+.page-header__button::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  width: 24px;
+  height: 4px;
+  transform: translate(50%, -50%);
+  background-color: $text-color-main;
+  box-shadow: 0 10px 0 0 $text-color-main, 0 -10px 0 0 $text-color-main;
+  transition: all 0.3s ease;
+}
+
+.page-header__button--closed::after {
+  transform: translate(50%, -50%) rotate(-45deg);
+  box-shadow: none;
+  transition: all 0.3s ease;
 }
 
 .page-header__button--closed {
