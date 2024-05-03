@@ -50,36 +50,27 @@
 }
 
 .programs__title {
+  @include font-family($font-family-primary, 400, 24px, 154%);
   align-self: center;
   margin: 0;
-  font-family: $font-family-primary;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 154%;
   text-transform: uppercase;
   color: $text-color-main;
 }
 
 .programs__text {
+  @include font-family($font-family-secondary, 400, 14px, 129%);
   grid-column: 1/-1;
   margin: 0;
-  font-family: $font-family-secondary;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 129%;
   color: $text-color-special;
 }
 
 .programs__link {
+  @include font-family($font-family-primary, 400, 16px, 100%);
   grid-column: 1/-1;
   display: grid;
   align-items: center;
   grid-template-columns: auto 1fr;
   gap: 18px 15px;
-  font-family: $font-family-primary;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 100%;
   text-transform: uppercase;
   text-align: center;
   color: $text-color-main;
@@ -95,12 +86,3 @@
   content: "";
   border: 1px solid $decoration-color-primary;
 }
-
-// .programs__link::after {
-//   grid-column: 2/-1;
-//   content: "";
-//   width: 32px;
-//   height: 10px;
-//   background-color: $text-color-main;
-//   mask-image: url("../../icons/stack.svg#icon-arrow");
-// }

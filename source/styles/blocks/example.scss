@@ -8,20 +8,14 @@
 }
 
 .example__heading {
+  @include font-family($font-family-primary, 400, 36px, 111%);
   margin: 0 0 20px;
-  font-family: $font-family-primary;
-  font-weight: 400;
-  font-size: 36px;
-  line-height: 111%;
   color: $text-color-main;
 }
 
 .example__text {
+  @include font-family($font-family-secondary, 400, 14px, 129%);
   margin: 0;
-  font-family: $font-family-secondary;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 129%;
   color: $text-color-special;
 }
 
@@ -38,11 +32,8 @@
 }
 
 .example__term {
+  @include font-family($font-family-primary, 400, 24px, 100%);
   margin: 0;
-  font-family: $font-family-primary;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 100%;
   color: $text-color-main;
   padding: 12px 0 17px;
   border: 2px solid $decoration-color-secondary;
@@ -51,22 +42,16 @@
 }
 
 .example__definition {
+  @include font-family($font-family-secondary, 400, 12px, 100%);
   margin: -12px 20% 0;
-  font-family: $font-family-secondary;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 100%;
   text-align: center;
   background-color: $bg-color-primary;
   color: $text-color-special;
 }
 
 .example__description {
+  @include font-family($font-family-primary, 400, 14px, 143%);
   margin: 0;
-  font-family: $font-family-primary;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 143%;
   text-transform: uppercase;
   text-align: center;
   color: $text-color-main;

@@ -1,10 +1,7 @@
 // button
 
 .button {
-  font-family: $font-family-primary;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 125%;
+  @include font-family($font-family-primary, 400, 16px, 125%);
   text-transform: uppercase;
   text-align: center;
   background-color: $bg-color-secondary;

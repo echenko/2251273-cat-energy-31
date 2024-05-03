@@ -19,20 +19,14 @@
 }
 
 .hero__heading {
+  @include font-family($font-family-primary, 400, 36px, 100%);
   margin: 0;
-  font-family: $font-family-primary;
-  font-weight: 400;
-  font-size: 36px;
-  line-height: 100%;
   text-align: center;
 }
 
 .hero__description {
+  @include font-family($font-family-primary, 400, 14px, 100%);
   margin: 0;
-  font-family: $font-family-primary;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 100%;
   text-transform: uppercase;
   text-align: center;
 }

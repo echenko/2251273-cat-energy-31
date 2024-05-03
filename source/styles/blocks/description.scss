@@ -2,10 +2,7 @@
 
 .description {
   @include list-reset;
-  font-family: $font-family-secondary;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 133%;
+  @include font-family($font-family-secondary, 400, 12px, 133%);
   text-align: center;
   color: $text-color-special;
 }
