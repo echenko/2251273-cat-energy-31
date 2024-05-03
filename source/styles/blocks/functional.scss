@@ -42,40 +42,30 @@
   background-color: $bg-color-secondary;
 }
 
-.functional__text::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: $bg-color-main;
-  width: 60px;
-  height: 60px;
+.functional__text--leaf::before {
+  background-image: url("../../icons/stack.svg#functional_icon-leaf");
+  background-size: 55%;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
-.functional__text--leaf::after {
-  mask-image: url("../../icons/stack.svg#functional_icon-leaf");
-  mask-size: 55%;
-  mask-repeat: no-repeat;
-  mask-position: center center;
+.functional__text--cook::before {
+  background-image: url("../../icons/stack.svg#functional_icon-cook");
+  background-size: 55%;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
-.functional__text--cook::after {
-  mask-image: url("../../icons/stack.svg#functional_icon-cook");
-  mask-size: 55%;
-  mask-repeat: no-repeat;
-  mask-position: center center;
+.functional__text--eat::before {
+  background-image: url("../../icons/stack.svg#functional_icon-eat");
+  background-size: 55%;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
-.functional__text--eat::after {
-  mask-image: url("../../icons/stack.svg#functional_icon-eat");
-  mask-size: 55%;
-  mask-repeat: no-repeat;
-  mask-position: center center;
-}
-
-.functional__text--scales::after {
-  mask-image: url("../../icons/stack.svg#functional_icon-scales");
-  mask-size: 55%;
-  mask-repeat: no-repeat;
-  mask-position: center center;
+.functional__text--scales::before {
+  background-image: url("../../icons/stack.svg#functional_icon-scales");
+  background-size: 55%;
+  background-repeat: no-repeat;
+  background-position: center center;
 }

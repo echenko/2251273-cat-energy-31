@@ -30,28 +30,13 @@
   border-radius: 2px;
   left: 50%;
   transform: translateX(-50%);
+  color: $bg-color-special;
 }
 
-.slider__control::after {
-  content: "";
-  background-color: $bg-color-special;
-  mask-image: url("../../icons/stack.svg#thumb");
-  width: 42px;
-  height: 42px;
-  border-radius: 50%;
+.slider__thumb {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.slider__control::before {
-  content: "";
-  background-color: $bg-color-main;
   width: 40px;
   height: 40px;
-  border-radius: 50%;
-  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
