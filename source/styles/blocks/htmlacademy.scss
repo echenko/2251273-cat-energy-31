@@ -6,6 +6,15 @@
   align-items: center;
   text-decoration: none;
   color: $text-color-primary;
+
+  &:hover,
+  &:focus-visible {
+    color: $bg-color-secondary;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .htmlacademy__text {

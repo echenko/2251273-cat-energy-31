@@ -20,6 +20,15 @@
   gap: 30px;
   min-width: 28px;
   min-height: 20px;
-  color: $text-color-primary;
+  color: $bg-color-special;
   padding: 10px;
+
+  &:hover,
+  &:focus-visible {
+    color: $bg-color-secondary;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
