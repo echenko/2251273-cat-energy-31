@@ -1,5 +1,13 @@
 // htmlacademy
 
+.htmlacademy {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+  color: $text-color-primary;
+}
+
 .htmlacademy__text {
   margin: 0;
   font-family: $font-family-secondary;

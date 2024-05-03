@@ -15,9 +15,11 @@
 .social__link {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   gap: 30px;
   min-width: 28px;
   min-height: 20px;
-  background-color: $bg-color-special;
+  color: $text-color-primary;
   padding: 10px;
 }
