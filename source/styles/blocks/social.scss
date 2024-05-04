@@ -5,11 +5,11 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 2px;
+  gap: 4px;
   margin: 0;
-  padding: 10px 0;
-  border-top: 2px solid $decoration-color-primary;
-  border-bottom: 2px solid $decoration-color-primary;
+  padding: 8px 0;
+  border-top: 1px solid $decoration-color-primary;
+  border-bottom: 1px solid $decoration-color-primary;
 }
 
 .social__link {
@@ -19,7 +19,7 @@
   align-items: center;
   gap: 30px;
   min-width: 28px;
-  min-height: 20px;
+  min-height: 24px;
   color: $bg-color-special;
   padding: 10px;
 

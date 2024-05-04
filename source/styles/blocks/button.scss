@@ -38,3 +38,10 @@
   background-color: $bg-color-special-hover;
   color: rgba($color: $text-color-special, $alpha: 0.3);
 }
+
+@media (min-width: $tablet-width) {
+  .button {
+    @include font-family($font-family-primary, 400, 20px, 130%);
+    padding: 14px 26px;
+  }
+}

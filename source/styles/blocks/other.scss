@@ -13,14 +13,6 @@
   color: $text-color-main;
 }
 
-.other__heading::after {
-  content: "";
-  flex-grow: 1;
-  height: 2px;
-  background-color: $bg-color-secondary;
-  transform: translateX(40px) translateY(10px);
-}
-
 .other__list {
   @include list-reset;
   display: grid;
@@ -68,11 +60,11 @@
 .other__gifts {
   box-sizing: border-box;
   width: 100%;
-  min-height: 286px;
-  margin: 39px 0 0;
+  min-height: 290px;
+  margin: 37px 0 0;
   padding: 60px 0 30px;
   background-color: $bg-color-secondary;
-  background-image: image-set(url("../../images/other/background-gifts@1x.webp") 1x, url("../../images/other/background-gifts@2x.jpg") 2x);
+  background-image: linear-gradient(to top, rgba($color: $bg-color-secondary, $alpha: 0.85), rgba($color: $bg-color-secondary, $alpha: 0.85)), image-set(url("../../images/other/background-gifts@1x.webp") 1x, url("../../images/other/background-gifts@2x.jpg") 2x);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;

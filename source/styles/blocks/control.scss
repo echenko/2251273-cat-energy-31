@@ -5,6 +5,19 @@
   gap: 13px;
 }
 
+.control--program {
+  gap: 15px;
+}
+
+.control--contacts {
+  position: relative;
+  gap: 14px;
+}
+
+.control-additionally {
+  gap: 15px;
+}
+
 .control__input {
   @include font-family($font-family-primary, 400, 16px);
   box-sizing: border-box;
@@ -14,17 +27,36 @@
   color: $text-color-special;
   margin: 0;
   padding: 9px 14px;
-  border: 2px solid $decoration-color-primary;
+  border: 1px solid $decoration-color-primary;
 }
 
 .control__input--medium {
   @include font-family($font-family-primary, 400, 20px);
+  padding: 12px;
+}
+
+.control__input--contacts {
+  padding: 10px 42px 10px 14px;
+}
+
+.control__icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.control__icon--email {
+  right: 13px;
+}
+
+.control__icon--phone {
+  right: 12px;
 }
 
 .control__mark {
   width: 28px;
   height: 28px;
-  border: 2px solid $decoration-color-primary;
+  border: 1px solid $decoration-color-primary;
   flex-shrink: 0;
 }
 
@@ -57,6 +89,6 @@
 
 .control--comment {
   @include font-family($font-family-primary, 400, 16px, 112%);
-  padding: 19px 12px;
+  padding: 17px 14px 25px;
   text-transform: uppercase;
 }

@@ -19,6 +19,7 @@
 
 .programs__item::before {
   content: "";
+  grid-column: 1 / 2;
   width: 50px;
   height: 50px;
   background-color: $bg-color-secondary;
@@ -40,10 +41,10 @@
 .programs__item--cat-pro::after {
   content: "";
   position: absolute;
-  top: 35px;
+  top: 25px;
   left: 12px;
   width: 67px;
-  height: 28px;
+  height: 50px;
   background-image: url("../../icons/stack.svg#programs_cat-pro");
   background-repeat: no-repeat;
   background-position: center;
@@ -77,7 +78,16 @@
   text-decoration: none;
 }
 
-.programs__link:hover {
+.programs__link:hover,
+.programs__link:focus-visible {
+  color: $text-color-main;
+
+  .programs__link-icon {
+    width: 30px;
+  }
+}
+
+.programs__link:active {
   color: $decoration-color-primary;
 }
 
@@ -85,4 +95,62 @@
   grid-column: 1/-1;
   content: "";
   border: 1px solid $decoration-color-primary;
+}
+
+@media (min-width: $tablet-width) {
+  .programs__item {
+    grid-template-columns: 1fr 200px;
+    gap: 24px 53px;
+    padding: 77px 63px 38px 52px;
+  }
+
+  .programs__item::before {
+    grid-column: 2 / 3;
+    grid-row: 1/ 5;
+    width: 200px;
+    height: 200px;
+    margin-bottom: 30px;
+  }
+
+  .programs__item--cat-back::after {
+    top: 80px;
+    left: inherit;
+    right: 60px;
+    width: 205px;
+    height: 205px;
+  }
+
+  .programs__item--cat-pro::after {
+    top: 90px;
+    left: inherit;
+    right: 30px;
+    width: 268px;
+    height: 200px;
+  }
+
+  .programs__title {
+    @include font-family($font-family-primary, 400, 36px, 100%);
+    grid-column: 1/2;
+    color: $text-color-main;
+  }
+
+  .programs__text {
+    @include font-family($font-family-secondary, 400, 16px, 150%);
+    grid-column: 1/2;
+    color: $text-color-main;
+  }
+
+  .programs__link {
+    @include font-family($font-family-primary, 400, 20px, 100%);
+    grid-column: 1/2;
+    gap: 35px 25px;
+  }
+
+  .programs__link::before {
+    border: none;
+  }
+
+  .programs__list {
+    gap: 30px;
+  }
 }

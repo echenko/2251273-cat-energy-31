@@ -63,3 +63,58 @@
   background-repeat: no-repeat;
   background-position: center center;
 }
+
+@media (min-width: $tablet-width) {
+  .functional__heading {
+    @include font-family($font-family-primary, 400, 60px, 100%);
+    color: $text-color-main;
+  }
+
+  .functional__list {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 37px 60px;
+    counter-reset: item;
+  }
+
+  .functional__item {
+    position: relative;
+    padding: 35px 60px 60px 0;
+  }
+
+  .functional__item::before {
+    @include font-family($font-family-primary, 400, 280px, 100%);
+    content: counter(item) "";
+    counter-increment: item;
+    color: $bg-color-primary;
+    position: absolute;
+    top: 0;
+    right: 100px;
+  }
+
+  .functional__text {
+    @include font-family($font-family-secondary, 400, 16px, 150%);
+    grid-template-columns: 1fr;
+    gap: 31px;
+  }
+
+  .functional__text::before {
+    width: 80px;
+    height: 80px;
+  }
+
+  .functional__text--leaf::before {
+    background-size: 40%;
+  }
+
+  .functional__text--cook::before {
+    background-size: 35%;
+  }
+
+  .functional__text--eat::before {
+    background-size: 35%;
+  }
+
+  .functional__text--scales::before {
+    background-size: 35%;
+  }
+}
