@@ -11,3 +11,14 @@
   display: flex;
   justify-content: space-between;
 }
+
+@media (min-width: $tablet-width) {
+  .description {
+    @include font-family($font-family-secondary, 400, 16px, 125%);
+  }
+
+  .description__item {
+    padding: 7px 0 5px;
+    border-bottom: 1px solid $decoration-color-secondary;
+  }
+}

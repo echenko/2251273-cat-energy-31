@@ -44,7 +44,7 @@
 }
 
 @media (min-width: $tablet-width) {
-  .button {
+  .button--auxiliary {
     @include font-family($font-family-primary, 400, 20px, 130%);
     padding: 14px 26px;
   }

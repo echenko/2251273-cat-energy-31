@@ -11,10 +11,37 @@
   @include list-reset;
   display: grid;
   grid-template-columns: 1fr;
-  border-bottom: 2px solid $decoration-color-main;
+  border-bottom: 1px solid $decoration-color-main;
 }
 
 .catalog__item {
   padding: 23px 20px;
   border-top: 1px solid $decoration-color-main;
+}
+
+.catalog__item--all {
+  padding: 25px 20px 22px;
+}
+
+@media (min-width: $tablet-width) {
+  .catalog {
+    padding: 30px;
+  }
+
+  .catalog__heading {
+    @include font-family($font-family-primary, 400, 60px, 100%);
+    padding: 6px 0 165px;
+  }
+
+  .catalog__list {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 139px 60px;
+    border-bottom: 1px solid $decoration-color-main;
+  }
+
+  .catalog__item {
+    padding: 0 37px 40px;
+    border: none;
+    background-color: $bg-color-primary;
+  }
 }

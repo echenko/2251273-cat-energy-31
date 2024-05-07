@@ -17,17 +17,14 @@
   @include list-reset;
   display: grid;
   grid-template-columns: 1fr;
+  border-bottom: 1px solid $decoration-color-main;
 }
 
 .other__item {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  padding: 13px 0 17px;
+  padding: 14px 0 16px;
   gap: 11px;
-  border-bottom: 1px solid $decoration-color-main;
-}
-
-.other__item:first-child {
   border-top: 1px solid $decoration-color-main;
 }
 
