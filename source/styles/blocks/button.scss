@@ -9,6 +9,18 @@
   text-decoration: none;
   padding: 10px;
   border: none;
+
+  &:hover {
+    background-color: $bg-color-hover;
+  }
+
+  &:focus-visible {
+    outline: 2px solid $bg-color-secondary;
+  }
+
+  &:active {
+    color: rgba($color: $text-color-secondary, $alpha: 0.3);
+  }
 }
 
 .button--base {
@@ -20,14 +32,6 @@
 .button--secondary {
   background-color: $bg-color-primary;
   color: $text-color-special;
-}
-
-.button:hover {
-  background-color: $bg-color-hover;
-}
-
-.button:active {
-  color: rgba($color: $text-color-secondary, $alpha: 0.3);
 }
 
 .button--secondary:hover {

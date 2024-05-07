@@ -24,6 +24,7 @@
   position: relative;
   display: grid;
   grid-template-columns: auto 1fr;
+  align-items: center;
   column-gap: 20px;
   margin: 0;
   color: $text-color-special;
@@ -38,28 +39,28 @@
 
 .functional__text--leaf::before {
   background-image: url("../../icons/stack.svg#functional_icon-leaf");
-  background-size: 55%;
+  background-size: 50%;
   background-repeat: no-repeat;
   background-position: center center;
 }
 
 .functional__text--cook::before {
   background-image: url("../../icons/stack.svg#functional_icon-cook");
-  background-size: 55%;
+  background-size: 45%;
   background-repeat: no-repeat;
   background-position: center center;
 }
 
 .functional__text--eat::before {
   background-image: url("../../icons/stack.svg#functional_icon-eat");
-  background-size: 55%;
+  background-size: 45%;
   background-repeat: no-repeat;
   background-position: center center;
 }
 
 .functional__text--scales::before {
   background-image: url("../../icons/stack.svg#functional_icon-scales");
-  background-size: 55%;
+  background-size: 45%;
   background-repeat: no-repeat;
   background-position: center center;
 }
@@ -67,12 +68,13 @@
 @media (min-width: $tablet-width) {
   .functional__heading {
     @include font-family($font-family-primary, 400, 60px, 100%);
+    margin: 0 0 17px;
     color: $text-color-main;
   }
 
   .functional__list {
     grid-template-columns: repeat(2, 1fr);
-    gap: 37px 60px;
+    gap: 39px 60px;
     counter-reset: item;
   }
 
@@ -82,7 +84,7 @@
   }
 
   .functional__item::before {
-    @include font-family($font-family-primary, 400, 280px, 100%);
+    @include font-family($font-family-primary, 400, 280px, 98%);
     content: counter(item) "";
     counter-increment: item;
     color: $bg-color-primary;
@@ -103,18 +105,18 @@
   }
 
   .functional__text--leaf::before {
-    background-size: 40%;
+    background-size: 38%;
   }
 
   .functional__text--cook::before {
-    background-size: 35%;
+    background-size: 34%;
   }
 
   .functional__text--eat::before {
-    background-size: 35%;
+    background-size: 34%;
   }
 
   .functional__text--scales::before {
-    background-size: 35%;
+    background-size: 34%;
   }
 }

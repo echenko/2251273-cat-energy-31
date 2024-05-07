@@ -1,27 +1,30 @@
 // page-footer
 
 .page-footer {
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
+  display: grid;
+  grid-template-columns: 1fr;
 }
 
 .page-footer__logo {
   padding: 20px 0 19px;
-  display: flex;
-  justify-content: center;
-  color: $logo-color;
-
-  &:hover,
-  &:focus-visible {
-    color: $logo-color-hover;
-  }
-
-  &:active {
-    color: $logo-color-active;
-  }
 }
 
 .page-footer__htmlacademy {
   padding: 20px 0;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+  }
+
+  .page-footer__logo {
+    padding: 22px 0;
+    justify-content: start;
+  }
+
+  .page-footer__htmlacademy {
+    padding: 22px 0;
+  }
 }

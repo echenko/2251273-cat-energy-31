@@ -1,0 +1,36 @@
+// logo
+
+.logo-header {
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:focus-visible {
+    opacity: 0.6;
+    outline: 2px solid $bg-color-secondary;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.logo-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $logo-color;
+
+  &:hover {
+    color: $logo-color-hover;
+  }
+
+  &:focus-visible {
+    color: $logo-color-hover;
+    outline: 2px solid $bg-color-secondary;
+  }
+
+  &:active {
+    color: $logo-color-active;
+  }
+}

@@ -21,13 +21,13 @@
   <header class="page-body__page-header page-header">
     <h1 class="visually-hidden">Самый популярный кошачий корм Cat Energy Pro</h1>
     <div class="page-header__wrapper">
-      <a class="page-header__logo page-logo" href="index.html" aria-label="Логотип Cat Energy">
+      <a class="page-header__logo logo logo-header" href="index.html" aria-label="Логотип Cat Energy">
         <picture>
           <source media="(min-width: 1440px)" srcset="images/logo/page-logo-desktop.svg" width="202" height="59"
             type="image/svg+xml">
           <source media="(min-width: 768px)" srcset="images/logo/page-logo-tablet.svg" width="174" height="50"
             type="image/svg+xml">
-          <img class="page-logo__image" src="images/logo/page-logo-mobile.svg" alt="Логотип Cat Energy" width="190"
+          <img class="logo-header__image" src="images/logo/page-logo-mobile.svg" alt="Логотип Cat Energy" width="190"
             height="38">
         </picture>
       </a>
@@ -39,7 +39,7 @@
       <!-- closed закрытое меню -->
       <ul class="navigation__list navigation__list--closed navigation__list--no-js">
         <li class="navigation__item">
-          <a class="navigation__link" href="index.html" aria-label="Главная">Главная</a>
+          <a class="navigation__link navigation__link--current" href="index.html" aria-label="Главная">Главная</a>
         </li>
         <li class="navigation__item">
           <a class="navigation__link" href="catalog.html" aria-label="Каталог">Каталог продукции</a>
@@ -133,7 +133,7 @@
           <p class="example__definition">затрачено времени</p>
         </li>
       </ul>
-      <p class="example__description">Затраты на питание: 15 000 РУБ.</p>
+      <p class="example__description">Затраты на питание:<br class="example__description-wrapping"> 15 000 РУБ.</p>
       <div class="example__slider slider">
         <div class="slider__wrapper slider__wrapper-before">
           <picture>
@@ -169,25 +169,27 @@
               srcset="images/example/boris-after-mobile@2x.png" alt="Кот Борис после" width="280" height="256">
           </picture>
         </div>
-        <div class="slider__control">
+        <button class="slider__control" type="button" aria-label="Управление слайдером">
           <svg class="slider__thumb" width="40" height="40">
             <use href="icons/stack.svg#thumb"></use>
           </svg>
-        </div>
+        </button>
       </div>
     </section>
     <section class="page-main__invite invite">
       <h2 class="visually-hidden">Наш адрес в Санкт-Петербурге</h2>
       <div class="invite__wrapper">
         <p class="invite__heading">Приглашаем<br>к сотрудничеству<br>дилеров!</p>
-        <h3 class="invite__text">ул. Большая<br>Конюшенная, д. 19/8<br>Санкт-Петербург</h3>
+        <h3 class="invite__text">ул. Большая<br>Конюшенная, д. 19/8<br>
+          <span  class="invite__text-сity">Санкт-Петербург</span>
+        </h3>
       </div>
       <iframe class="invite__map map" src="https://yandex.ru/map-widget/v1/-/CDRPbIpb"></iframe>
     </section>
   </main>
   <footer class="page-body__page-footer page-footer">
-    <a class="page-footer__logo" href="#" aria-label="Логотип Cat Energy">
-      <svg width="128" height="25">
+    <a class="page-footer__logo logo logo-footer" href="#" aria-label="Логотип Cat Energy">
+      <svg class="logo-footer__image" width="128" height="25">
         <use href="icons/stack.svg#footer-logo"></use>
       </svg>
     </a>

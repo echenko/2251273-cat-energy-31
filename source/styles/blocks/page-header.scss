@@ -10,7 +10,7 @@
   grid-template-columns: 1fr auto;
   gap: 10px;
   align-items: center;
-  padding: 14px 20px 12px;
+  padding: 12px 15px 10px  20px;
   border-bottom: 2px solid $decoration-color-main;
 }
 
@@ -23,23 +23,36 @@
   border: none;
   padding: 0;
   background-color: $bg-color-main;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:focus-visible {
+    opacity: 0.6;
+    outline: 2px solid $bg-color-secondary;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .page-header__button::before {
   content: "";
   position: absolute;
   top: 50%;
-  right: 0;
+  right: 50%;
   width: 24px;
   height: 2px;
-  transform: translate(0, -100%);
+  transform: translate(50%, -100%);
   background-color: $text-color-main;
   box-shadow: 0 8px 0 0 $text-color-main, 0 -8px 0 0 $text-color-main;
   transition: all 0.3s ease;
 }
 
 .page-header__button--closed::before {
-  transform: translate(0, -100%) rotate(45deg);
+  transform: translate(50%, -100%) rotate(45deg);
   box-shadow: none;
   transition: all 0.3s ease;
 }
@@ -48,17 +61,17 @@
   content: "";
   position: absolute;
   top: 50%;
-  right: 0;
+  right: 50%;
   width: 24px;
   height: 2px;
-  transform: translate(0, -100%);
+  transform: translate(50%, -100%);
   background-color: $text-color-main;
   box-shadow: 0 8px 0 0 $text-color-main, 0 -8px 0 0 $text-color-main;
   transition: all 0.3s ease;
 }
 
 .page-header__button--closed::after {
-  transform: translate(0, -100%) rotate(-45deg);
+  transform: translate(50%, -100%) rotate(-45deg);
   box-shadow: none;
   transition: all 0.3s ease;
 }
@@ -77,11 +90,6 @@
   .page-header {
     grid-template-columns: auto 1fr;
   }
-
-  // .page-header__navigation {
-  //   display: flex;
-  //   flex-grow: 1;
-  // }
 
   .page-header__wrapper {
     padding: 0;

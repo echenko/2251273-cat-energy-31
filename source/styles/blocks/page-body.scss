@@ -5,12 +5,16 @@
 }
 
 .page-body__page-footer {
-  padding: 20px;
+  padding: 19px 20px 20px;
   background-color: $bg-color-primary;
 }
 
 @media (min-width: $tablet-width) {
   .page-body__page-header {
     padding: 25px 19px 25px 30px;
+  }
+
+  .page-body__page-footer {
+    padding: 35px 30px;
   }
 }

@@ -7,9 +7,13 @@
   text-decoration: none;
   color: $text-color-primary;
 
-  &:hover,
+  &:hover {
+    color: $bg-color-secondary;
+  }
+
   &:focus-visible {
     color: $bg-color-secondary;
+    outline: 2px solid $bg-color-secondary;
   }
 
   &:active {
@@ -21,4 +25,11 @@
   @include font-family($font-family-secondary, 400, 16px, 125%);
   margin: 0;
   color: $text-color-special;
+}
+
+@media (min-width: $tablet-width) {
+  .htmlacademy {
+    justify-content: end;
+    gap: 23px;
+  }
 }
