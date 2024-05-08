@@ -6,10 +6,10 @@
 
 .navigation__list {
   @include list-reset;
+  position: absolute;
   display: flex;
   flex-direction: column;
   align-items: stretch;
-  position: absolute;
   width: 100%;
   max-height: 1000px;
   background-color: $bg-color-main;
@@ -25,8 +25,8 @@
 }
 
 .navigation__list--no-js {
-  display: block;
   position: static;
+  display: block;
   max-height: 1000px;
   opacity: 1;
   transition: all 0.3s ease;
@@ -64,6 +64,7 @@
 }
 
 // tablet
+
 @media (min-width: $tablet-width) {
   .navigation {
     display: flex;
@@ -75,6 +76,7 @@
     display: flex;
     justify-content: flex-end;
     flex-flow: row wrap;
+    padding: 4px 0 0;
     gap: 4px;
   }
 

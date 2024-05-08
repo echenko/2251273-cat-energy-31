@@ -4,9 +4,9 @@
   display: flex;
   flex-direction: column;
   gap: 14px;
-  border: none;
   padding: 24px 20px;
   margin: 0;
+  border: none;
 }
 
 .group--program {
@@ -32,16 +32,6 @@
 .group__title {
   @include font-family($font-family-primary, 400, 24px, 108%);
   position: relative;
-  color: $text-color-main;
   margin-bottom: 20px;
+  color: $text-color-main;
 }
-
-// .group__title::after {
-//   content: "";
-//   position: absolute;
-//   top: 10px;
-//   height: 2px;
-//   width: 100%;
-//   background-color: $bg-color-secondary;
-//   transform: translateX(20px) translateY(10px);
-// }

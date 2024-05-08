@@ -12,6 +12,8 @@
   justify-content: space-between;
 }
 
+// tablet
+
 @media (min-width: $tablet-width) {
   .description {
     @include font-family($font-family-secondary, 400, 16px, 125%);

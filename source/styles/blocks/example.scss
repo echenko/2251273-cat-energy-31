@@ -34,18 +34,17 @@
 .example__term {
   @include font-family($font-family-primary, 400, 24px, 100%);
   margin: 0;
-  color: $text-color-main;
   padding: 13px 0 18px;
-  border: 1px solid $decoration-color-secondary;
-  border-radius: 4px;
   text-transform: uppercase;
+  border: 1px solid $decoration-color-secondary;
+  color: $text-color-main;
 }
 
 .example__definition {
   @include font-family($font-family-secondary, 400, 12px, 100%);
   margin: -10px 20% 0;
-  text-align: center;
   background-color: $bg-color-auxiliary;
+  text-align: center;
   color: $text-color-special;
 }
 
@@ -55,15 +54,17 @@
   text-transform: uppercase;
   text-align: center;
   color: $text-color-main;
+}
 
-  &-wrapping {
-    display: none;
-  }
+.example__description-wrapping {
+  display: none;
 }
 
 .example__slider {
   margin: 0 auto;
 }
+
+// tablet
 
 @media (min-width: $tablet-width) {
   .example {
@@ -111,19 +112,19 @@
 
   .example__description {
     @include font-family($font-family-primary, 400, 20px, 150%);
-    letter-spacing: 0.1px;
-    text-align: right;
     max-width: 80%;
     justify-self: end;
     padding: 6px 0 0;
-
-    &-wrapping {
-      display: block;
-    }
+    letter-spacing: 0.1px;
+    text-align: right;
   }
 
   .example__slider {
     grid-column: 1 / -1;
     margin: 44px auto 0;
+  }
+
+  .example__description-wrapping {
+    display: block;
   }
 }

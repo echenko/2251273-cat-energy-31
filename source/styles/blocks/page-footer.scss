@@ -13,6 +13,8 @@
   padding: 20px 0;
 }
 
+// tablet
+
 @media (min-width: $tablet-width) {
   .page-footer {
     grid-template-columns: repeat(3, 1fr);
@@ -20,8 +22,8 @@
   }
 
   .page-footer__logo {
-    padding: 22px 0;
     justify-content: start;
+    padding: 22px 0;
   }
 
   .page-footer__htmlacademy {

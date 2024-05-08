@@ -88,8 +88,8 @@
   margin: 10px 0 0;
   padding: 10px 0;
   text-transform: uppercase;
-  color: $text-color-main;
   text-decoration: none;
+  color: $text-color-main;
 
   &:hover {
     .programs__link-icon {
@@ -98,8 +98,8 @@
   }
 
   &:focus-visible {
-    color: $text-color-main;
     outline: 2px solid $bg-color-secondary;
+    color: $text-color-main;
 
     .programs__link-icon {
       width: 30px;
@@ -110,6 +110,8 @@
     opacity: 0.3;
   }
 }
+
+// tablet
 
 @media (min-width: $tablet-width) {
   .programs__item {

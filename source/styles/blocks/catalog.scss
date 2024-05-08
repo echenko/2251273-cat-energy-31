@@ -2,9 +2,9 @@
 
 .catalog__heading {
   @include font-family($font-family-primary, 400, 36px, 100%);
-  color: $text-color-main;
   margin: 0;
   padding: 27px 20px 40px;
+  color: $text-color-main;
 }
 
 .catalog__list {
@@ -23,6 +23,8 @@
   padding: 25px 20px 22px;
 }
 
+// tablet
+
 @media (min-width: $tablet-width) {
   .catalog {
     padding: 30px;
@@ -30,7 +32,7 @@
 
   .catalog__heading {
     @include font-family($font-family-primary, 400, 60px, 100%);
-    padding: 6px 0 165px;
+    padding: 10px 0 165px;
   }
 
   .catalog__list {
@@ -43,5 +45,9 @@
     padding: 0 37px 40px;
     border: none;
     background-color: $bg-color-primary;
+  }
+
+  .catalog__item--all {
+    padding: 50px 37px 40px;
   }
 }

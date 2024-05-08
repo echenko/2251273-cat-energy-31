@@ -1,6 +1,13 @@
 // logo
 
-.logo-header {
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo__header {
+  display: flex;
+
   &:hover {
     opacity: 0.6;
   }
@@ -15,10 +22,8 @@
   }
 }
 
-.logo-footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.logo__footer {
+  place-self: center center;
   color: $logo-color;
 
   &:hover {
@@ -32,5 +37,13 @@
 
   &:active {
     color: $logo-color-active;
+  }
+}
+
+// tablet
+
+@media (min-width: $tablet-width) {
+  .logo__footer {
+    place-self: center start;
   }
 }

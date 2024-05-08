@@ -9,7 +9,7 @@
   @include font-family($font-family-primary, 400, 24px, 100%);
   display: flex;
   margin: 0;
-  padding: 0 0 36px;
+  padding: 0 0 35px;
   color: $text-color-main;
 }
 
@@ -23,7 +23,7 @@
 .other__item {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  padding: 14px 0 16px;
+  padding: 14px 0 17px;
   gap: 11px;
   border-top: 1px solid $decoration-color-main;
 }
@@ -58,7 +58,7 @@
   box-sizing: border-box;
   width: 100%;
   min-height: 290px;
-  margin: 37px 0 0;
+  margin: 35px 0 0;
   padding: 60px 0 30px;
   background-color: $bg-color-secondary;
   background-image: linear-gradient(to top, rgba($color: $bg-color-secondary, $alpha: 0.85), rgba($color: $bg-color-secondary, $alpha: 0.85)), image-set(url("../../images/other/background-gifts@1x.webp") 1x, url("../../images/other/background-gifts@2x.jpg") 2x);

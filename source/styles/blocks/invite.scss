@@ -33,6 +33,8 @@
   min-height: 362px;
 }
 
+// tablet
+
 @media (min-width: $tablet-width) {
   .invite__wrapper {
     padding: 62px 70px 38px;
@@ -46,10 +48,10 @@
     @include font-family($font-family-secondary, 400, 16px, 125%);
     justify-self: end;
     text-align: right;
+  }
 
-    &-сity {
-      line-height: 380%;
-    }
+  .invite__text-city {
+    line-height: 380%;
   }
 
   .invite__map {

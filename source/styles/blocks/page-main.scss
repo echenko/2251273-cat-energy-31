@@ -13,14 +13,14 @@
 }
 
 .page-main__catalog {
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   padding: 0;
-  box-sizing: border-box;
 }
 
 .page-main__other {
-  padding: 25px 20px 0;
+  padding: 26px 20px 0;
 }
 
 .page-main__subscription {
@@ -49,6 +49,8 @@
 .page-main__form-button {
   margin: 0 20px;
 }
+
+// tablet
 
 @media (min-width: $tablet-width) {
   .page-main__programs {

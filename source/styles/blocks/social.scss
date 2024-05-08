@@ -20,8 +20,8 @@
   gap: 30px;
   min-width: 28px;
   min-height: 24px;
-  color: $bg-color-special;
   padding: 10px;
+  color: $bg-color-special;
 
   &:hover {
     color: $bg-color-secondary;
@@ -36,6 +36,8 @@
     opacity: 0.3;
   }
 }
+
+// tablet
 
 @media (min-width: $tablet-width) {
   .social {

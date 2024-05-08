@@ -9,12 +9,14 @@
   background-color: $bg-color-primary;
 }
 
+// tablet
+
 @media (min-width: $tablet-width) {
   .page-body__page-header {
     padding: 25px 19px 25px 30px;
   }
 
   .page-body__page-footer {
-    padding: 35px 30px;
+    padding: 36px 30px;
   }
 }

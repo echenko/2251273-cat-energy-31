@@ -2,13 +2,13 @@
 
 .button {
   @include font-family($font-family-primary, 400, 16px, 125%);
-  text-transform: uppercase;
-  text-align: center;
-  background-color: $bg-color-secondary;
-  color: $text-color-secondary;
-  text-decoration: none;
   padding: 10px;
   border: none;
+  background-color: $bg-color-secondary;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: $text-color-secondary;
 
   &:hover {
     background-color: $bg-color-hover;
@@ -24,9 +24,9 @@
 }
 
 .button--base {
+  padding: 15px;
   font-size: 20px;
   line-height: 130%;
-  padding: 15px;
 }
 
 .button--secondary {
@@ -42,6 +42,8 @@
   background-color: $bg-color-special-hover;
   color: rgba($color: $text-color-special, $alpha: 0.3);
 }
+
+// tablet
 
 @media (min-width: $tablet-width) {
   .button--auxiliary {
