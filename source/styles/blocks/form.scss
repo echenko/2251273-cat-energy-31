@@ -12,3 +12,13 @@
   text-align: center;
   color: $text-color-main;
 }
+
+// tablet
+
+@media (min-width: $tablet-width) {
+  .form-line {
+    display: grid;
+    grid-template-columns: 10fr 6.8fr;
+    gap: 0;
+  }
+}

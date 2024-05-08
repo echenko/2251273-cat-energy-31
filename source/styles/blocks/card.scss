@@ -84,12 +84,8 @@
 }
 
 .card__button {
+  align-self: flex-end;
   grid-column: 1/-1;
-  margin: 0;
-}
-
-.card__button--all {
-  margin: 0;
 }
 
 .card__text {
@@ -107,6 +103,11 @@
     gap: 21px;
   }
 
+  .card__link--all {
+    justify-content: start;
+    gap: 23px;
+  }
+
   .card__link--image {
     grid-row: 1/2;
     justify-self: center;
@@ -122,6 +123,18 @@
     text-align: center;
   }
 
+  .card__title--all {
+    align-self: center;
+    gap: 50px;
+    width: 70%;
+  }
+
+  .card__title--all::before {
+    content: "";
+    width: 60px;
+    height: 60px;
+  }
+
   .card__title-wrapping {
     display: inline;
   }
@@ -132,5 +145,11 @@
 
   .card__button {
     margin: 0;
+  }
+
+  .card__text {
+    @include font-family($font-family-secondary, 400, 16px, 112%);
+    align-self: center;
+    width: 80%;
   }
 }

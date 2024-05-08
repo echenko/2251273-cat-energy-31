@@ -26,3 +26,21 @@
   flex-direction: column;
   gap: 16px;
 }
+
+// tablet
+
+@media (min-width: $tablet-width) {
+  .subscription__heading {
+    @include font-family($font-family-primary, 400, 32px, 100%);
+    padding: 0 0 67px;
+  }
+
+  .subscription__text {
+    @include font-family($font-family-primary, 400, 24px, 133%);
+  }
+
+  .subscription__form {
+    display: flex;
+    flex-direction: row;
+  }
+}
