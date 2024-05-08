@@ -74,9 +74,9 @@
   .navigation__list {
     position: relative;
     display: flex;
+    align-self: flex-end;
     justify-content: flex-end;
     flex-flow: row wrap;
-    padding: 4px 0 0;
     gap: 4px;
   }
 
@@ -98,7 +98,7 @@
     position: absolute;
     left: 13px;
     right: 13px;
-    bottom: -2px;
+    bottom: -1px;
     height: 2px;
     background-color: $bg-color-secondary;
   }
