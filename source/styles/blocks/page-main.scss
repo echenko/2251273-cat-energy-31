@@ -88,3 +88,19 @@
     margin: 0 0  0 70px;
   }
 }
+
+// desktop
+
+@media (min-width: $desktop-width) {
+  .page-main__programs {
+    padding: 0 110px;
+  }
+
+  .page-main__functional {
+    padding: 70px 110px 43px;
+  }
+
+  .page-main__example {
+    padding: 23px 110px 0;
+  }
+}

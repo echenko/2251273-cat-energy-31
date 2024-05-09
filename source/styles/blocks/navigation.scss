@@ -79,6 +79,7 @@
     justify-content: flex-end;
     flex-flow: row wrap;
     gap: 4px;
+    background-color: inherit;
   }
 
   .navigation__item {
@@ -107,5 +108,30 @@
   .navigation__list--closed {
     max-height: 1000px;
     opacity: 1;
+  }
+}
+
+// desktop
+
+@media (min-width: $desktop-width) {
+  .navigation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .navigation__list--auxiliary {
+    .navigation__link {
+      color: $text-color-secondary;
+    }
+
+    .navigation__link--current::after {
+      background-color: $bg-color-main;
+    }
+  }
+
+  .navigation__link {
+    @include font-family($font-family-primary, 400, 20px, 100%);
+    padding: 12px 13px;
   }
 }

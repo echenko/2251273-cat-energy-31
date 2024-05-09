@@ -20,3 +20,20 @@
     padding: 35px 30px;
   }
 }
+
+// desktop
+
+@media (min-width: $desktop-width) {
+  .page-body {
+    max-width: $desktop-width;
+  }
+
+  .page-body__page-header {
+    padding: 55px 96px 55px 110px;
+    // margin: 0 0 -170px;
+  }
+
+  .page-body__page-footer {
+    padding: 48px 110px;
+  }
+}
