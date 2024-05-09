@@ -21,7 +21,7 @@
 }
 
 .group--comment {
-  padding: 20px 20px 5px;
+  padding: 20px 20px 3px;
 }
 
 .group--additionally {
@@ -34,4 +34,46 @@
   position: relative;
   margin-bottom: 20px;
   color: $text-color-main;
+}
+
+// tablet
+
+@media (min-width: $tablet-width) {
+  .group {
+    grid-column: 1 / -1;
+    gap: 20px;
+    padding: 25px 70px;
+  }
+
+  .group--program {
+    gap: 13px;
+    margin: 45px 70px;
+    padding: 23px 26px 26px;
+    border: 1px solid $decoration-color-main;
+  }
+
+  .group__title {
+    @include font-family($font-family-primary, 400, 36px, 100%);
+    margin-bottom: 55px;
+  }
+
+  .group__title--additionally {
+    grid-column: 1 / -1;
+    margin-bottom: 25px;
+  }
+
+  .group--contacts {
+    padding: 19px 70px 40px;
+  }
+
+  .group--comment {
+    padding: 24px 70px 40px;
+  }
+
+  .group--additionally {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px 60px;
+    padding: 22px 70px 53px;
+  }
 }

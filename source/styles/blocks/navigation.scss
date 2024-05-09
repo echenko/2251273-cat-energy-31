@@ -2,6 +2,7 @@
 
 .navigation {
   position: relative;
+  z-index: 1;
 }
 
 .navigation__list {
@@ -87,10 +88,10 @@
   .navigation__link {
     @include font-family($font-family-primary, 400, 18px, 133%);
     position: relative;
+    display: flex;
     border: none;
     margin: 2px;
     padding: 8px 13px;
-    display: flex;
   }
 
   .navigation__link--current::after {

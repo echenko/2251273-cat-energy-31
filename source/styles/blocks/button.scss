@@ -9,12 +9,15 @@
   text-decoration: none;
   text-transform: uppercase;
   color: $text-color-secondary;
+  user-select: none;
+  cursor: pointer;
 
   &:hover {
     background-color: $bg-color-hover;
   }
 
   &:focus-visible {
+    background-color: $bg-color-hover;
     outline: 2px solid $bg-color-secondary;
   }
 

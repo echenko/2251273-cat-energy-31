@@ -15,15 +15,18 @@
 .card__link {
   display: flex;
   text-decoration: none;
+  transition: all 0.3s ease;
 
   &:hover {
-    opacity: 0.6;
+    transform: scale(1.1);
+    transition: all 0.3s ease;
   }
 
   &:focus-visible {
-    opacity: 0.6;
     outline: 2px solid $bg-color-secondary;
     outline-offset: -2px;
+    transform: scale(1.1);
+    transition: all 0.3s ease;
   }
 
   &:active {
