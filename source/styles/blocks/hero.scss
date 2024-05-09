@@ -90,45 +90,46 @@
 @media (min-width: $desktop-width) {
   .hero {
     grid-template-columns: repeat(2, 1fr);
-    margin: -170px 0 0;
-    padding: 0 0 82px;
+    // margin: 0;
+    padding: 10px 0 97px;
   }
 
-  .hero::after {
-    content: "";
-    grid-row: 1 / 2;
-    grid-column: 2 / 3;
-    display: flex;
-    width: 100%;
-    height: 694px;
-    background-color: $bg-color-secondary;
-    background-image: linear-gradient(to top, rgba($color: $bg-color-secondary, $alpha: 0.85), rgba($color: $bg-color-secondary, $alpha: 0.85)), image-set(url("../../images/hero/hero-background-desktop@1x.webp") 1x, url("../../images/hero/hero-background-desktop@2x.webp") 2x, url("../../images/hero/hero-background-desktop@1x.jpg") 1x, url("../../images/hero/hero-background-desktop@2x.jpg") 2x);
-    background-repeat: no-repeat;
-    background-position: 65% 50%;
-    background-size: cover;
-  }
+  // .hero::after {
+  //   content: "";
+  //   grid-row: 1 / 2;
+  //   grid-column: 2 / 3;
+  //   display: flex;
+  //   width: 100%;
+  //   height: 694px;
+  //   background-color: $bg-color-secondary;
+  //   background-image: linear-gradient(to top, rgba($color: $bg-color-secondary, $alpha: 0.85), rgba($color: $bg-color-secondary, $alpha: 0.85)), image-set(url("../../images/hero/hero-background-desktop@1x.webp") 1x, url("../../images/hero/hero-background-desktop@2x.webp") 2x, url("../../images/hero/hero-background-desktop@1x.jpg") 1x, url("../../images/hero/hero-background-desktop@2x.jpg") 2x);
+  //   background-repeat: no-repeat;
+  //   background-position: 65% 50%;
+  //   background-size: cover;
+  // }
 
   .hero__wrapper {
     display: flex;
     grid-template-columns: 190px 420px;
     row-gap: 40px;
-    padding: 225px 0 21px 190px;
+    padding: 45px 0 10px 190px;
     background: none;
     color: $text-color-main;
   }
 
   .hero__image {
-    position: absolute;
-    left: 557px;
-    top: 144px;
+    position: relative;
+    left: -247px;
+    top: -36px;
     width: 552px;
     height: 499px;
+    z-index: 1;
   }
 
   .hero__button {
     position: absolute;
     left: 190px;
-    top: 458px;
+    top: 287px;
     margin: 0;
   }
 }

@@ -40,7 +40,18 @@
 // tablet
 
 @media (min-width: $tablet-width) {
+  .logo--header {
+    place-self: center start;
+  }
+
+
   .logo--footer {
     place-self: center start;
   }
+}
+
+// desktop
+
+@media (min-width: $desktop-width) {
+  //
 }

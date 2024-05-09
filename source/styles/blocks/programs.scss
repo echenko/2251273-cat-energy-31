@@ -84,12 +84,14 @@
   grid-column: 1/-1;
   display: flex;
   align-items: center;
+  place-self: center start;
   gap: 18px;
   margin: 10px 0 0;
   padding: 10px 0;
   text-transform: uppercase;
   text-decoration: none;
   color: $text-color-main;
+
 
   &:hover {
     .programs__link-icon {
