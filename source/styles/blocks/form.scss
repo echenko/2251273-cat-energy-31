@@ -35,3 +35,11 @@
     text-align: left;
   }
 }
+
+// desktop
+
+@media (min-width: $desktop-width) {
+  .form-line {
+    grid-template-columns: 10fr 5.2fr;
+  }
+}

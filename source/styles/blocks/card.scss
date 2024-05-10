@@ -113,7 +113,7 @@
 
   .card__link--image {
     grid-row: 1/2;
-    justify-self: center;
+    // justify-self: center;
     min-width: 200px;
     min-height: 210px;
     margin: -70px 0 0;
@@ -154,5 +154,28 @@
     @include font-family($font-family-secondary, 400, 16px, 112%);
     align-self: center;
     width: 80%;
+  }
+}
+
+// desktop
+
+@media (min-width: $desktop-width) {
+  .card__link--image {
+    min-width: 168px;
+    margin: -70px 0 -10px;
+  }
+
+  .card__title--all {
+    gap: 39px;
+    width: 80%;
+  }
+
+  .card__text {
+    width: 100%;
+  }
+
+  .card__link--all {
+    justify-content: start;
+    gap: 24px;
   }
 }

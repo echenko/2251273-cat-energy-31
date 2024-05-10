@@ -7,6 +7,7 @@
 .page-body__page-footer {
   padding: 19px 20px 20px;
   background-color: $bg-color-primary;
+  z-index: 1;
 }
 
 // tablet
@@ -30,7 +31,6 @@
 
   .page-body__page-header {
     padding: 55px 96px;
-    // margin: 0 0 -170px;
   }
 
   .page-body__page-footer {

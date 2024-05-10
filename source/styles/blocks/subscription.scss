@@ -44,3 +44,17 @@
     flex-direction: row;
   }
 }
+
+// desktop
+
+@media (min-width: $desktop-width) {
+  .subscription__heading {
+    @include font-family($font-family-primary, 400, 40px, 100%);
+    padding: 0 0 70px;
+  }
+
+  .subscription__form {
+    justify-self: center;
+    width: 752px;
+  }
+}

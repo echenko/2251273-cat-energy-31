@@ -152,3 +152,66 @@
     transform: translateY(-50%);
   }
 }
+
+// desktop
+
+@media (min-width: $desktop-width) {
+  .other {
+    grid-template-columns: 110fr 30fr;
+    gap: 0 80px;
+  }
+
+  .other__heading {
+    @include font-family($font-family-primary, 400, 40px, 100%);
+    grid-column: 1 / -1;
+    padding: 0 0 80px;
+  }
+
+  .other__item {
+    grid-template-columns: 316px 233px 72px 1fr;
+    padding: 13px 0 15px;
+    gap: 0 10px;
+    border-top: 1px solid $decoration-color-main;
+    border-right: none;
+    border-left: none;
+    border-bottom: 1px solid $decoration-color-main;
+    align-items: center;
+  }
+
+  .other__price {
+    @include font-family($font-family-secondary, 400, 16px, 129%);
+    min-width: 100%;
+    text-align: left;
+  }
+
+  .other__button {
+    grid-column: -2 / -1;
+    margin: 2px 0 0;
+  }
+
+  .other__gifts {
+    justify-content: center;
+    align-items: center;
+    min-height: 200px;
+    margin: 0;
+    padding: 40px 0 30px;
+    background-position: 100% 50%;
+  }
+
+  .other__gifts-text {
+    text-align: center;
+    gap: 44px;
+    width: 65%;
+    padding: 0;
+  }
+
+  .other__gifts-text::before {
+    content: "";
+    position: static;
+    top: 0;
+    left: 0;
+    width: 80px;
+    height: 90px;
+    transform: translateY(0);
+  }
+}
