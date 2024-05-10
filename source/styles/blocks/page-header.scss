@@ -95,7 +95,7 @@
 
 
   .page-header__wrapper {
-    padding: 0 0 0 14px;
+    padding: 0;
     border: none;
     gap: 0;
   }
@@ -110,5 +110,9 @@
 @media (min-width: $desktop-width) {
   .page-header {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .page-header__wrapper {
+    padding: 0 0 0 14px;
   }
 }

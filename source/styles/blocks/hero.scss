@@ -12,7 +12,14 @@
   row-gap: 25px;
   padding: 27px 35px 164px;
   background-color: $bg-color-secondary;
-  background-image: linear-gradient(to top, rgba($color: $bg-color-secondary, $alpha: 0.85), rgba($color: $bg-color-secondary, $alpha: 0.85)), image-set(url("../../images/hero/hero-background-mobile@1x.webp") 1x, url("../../images/hero/hero-background-mobile@2x.webp") 2x, url("../../images/hero/hero-background-mobile@1x.jpg") 1x, url("../../images/hero/hero-background-mobile@2x.jpg") 2x);
+  background-image:
+    linear-gradient(to top,
+    rgba($color: $bg-color-secondary, $alpha: 0.85),
+    rgba($color: $bg-color-secondary, $alpha: 0.85)),
+    image-set(url("../../images/hero/hero-background-mobile@1x.webp") 1x,
+    url("../../images/hero/hero-background-mobile@2x.webp") 2x,
+    url("../../images/hero/hero-background-mobile@1x.jpg") 1x,
+    url("../../images/hero/hero-background-mobile@2x.jpg") 2x);
   background-repeat: no-repeat;
   background-position: 65% 50%;
   background-size: cover;
@@ -36,7 +43,7 @@
   display: flex;
   width: 280px;
   height: 270px;
-  margin: -135px auto 2px;
+  margin: -135px auto 3px;
 }
 
 .hero__button {
@@ -90,23 +97,8 @@
 @media (min-width: $desktop-width) {
   .hero {
     grid-template-columns: repeat(2, 1fr);
-    // margin: 0;
     padding: 10px 0 97px;
   }
-
-  // .hero::after {
-  //   content: "";
-  //   grid-row: 1 / 2;
-  //   grid-column: 2 / 3;
-  //   display: flex;
-  //   width: 100%;
-  //   height: 694px;
-  //   background-color: $bg-color-secondary;
-  //   background-image: linear-gradient(to top, rgba($color: $bg-color-secondary, $alpha: 0.85), rgba($color: $bg-color-secondary, $alpha: 0.85)), image-set(url("../../images/hero/hero-background-desktop@1x.webp") 1x, url("../../images/hero/hero-background-desktop@2x.webp") 2x, url("../../images/hero/hero-background-desktop@1x.jpg") 1x, url("../../images/hero/hero-background-desktop@2x.jpg") 2x);
-  //   background-repeat: no-repeat;
-  //   background-position: 65% 50%;
-  //   background-size: cover;
-  // }
 
   .hero__wrapper {
     display: flex;

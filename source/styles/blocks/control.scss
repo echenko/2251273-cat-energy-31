@@ -19,11 +19,11 @@
   }
 
   &:has(.control__input[type="radio"]:active) {
-    opacity: 0.3;
+    opacity: 0.6;
   }
 
   &:has(.control__input[type="checkbox"]:active) {
-    opacity: 0.3;
+    opacity: 0.6;
   }
 }
 
@@ -31,7 +31,7 @@
   gap: 15px;
 
   &:active {
-    opacity: 0.3;
+    opacity: 0.6;
   }
 }
 
@@ -44,7 +44,7 @@
   gap: 15px;
 
   &:active {
-    opacity: 0.3;
+    opacity: 0.6;
   }
 }
 
