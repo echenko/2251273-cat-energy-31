@@ -177,6 +177,19 @@
   }
 
   .control-additionally {
+    align-self: start;
     gap: 20px;
+  }
+}
+
+// desktop
+
+@media (min-width: $desktop-width) {
+  .control__icon--email {
+    right: 16px;
+  }
+
+  .control__icon--phone {
+    right: 14px;
   }
 }

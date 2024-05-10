@@ -111,4 +111,18 @@
   .page-main__subscription {
     padding: 97px 110px 45px;
   }
+
+  .page-main__heading {
+    padding: 20px 110px 55px;
+  }
+
+  .page-main__description {
+    @include font-family($font-family-primary, 400, 20px, 150%);
+    width: 25%;
+    padding: 0 110px 39px;
+  }
+
+  .page-main__form-button {
+    margin: 0;
+  }
 }
