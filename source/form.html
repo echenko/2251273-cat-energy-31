@@ -53,12 +53,14 @@
   <main class="page-body__page-main page-main">
     <h2 class="page-main__heading">Подбор программы</h2>
     <p class="page-main__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+    /*
+    control__input--invalid - невалидное поле ввода
+     */
     <form class="page-main__form form" action="https://echo.htmlacademy.ru/" method="post">
       <fieldset class="form__group group">
         <legend class="group__name visually-hidden">Кот</legend>
         <label class="group__control control" for="cat-name">
           <span class="control__name">Имя:*</span>
-          <!-- --invalid -->
           <input class="control__input" type="text" name="cat-name" id="cat-name"
             placeholder="Барсик" aria-label="Введите имя кота" required>
         </label>
