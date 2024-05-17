@@ -41,6 +41,7 @@
 .group__title::after {
   content: "";
   position: relative;
+  min-width: 20px;
   height: 2px;
   flex-grow: 1;
   top: 15px;
@@ -69,17 +70,18 @@
     margin: 0 -70px 55px;
   }
 
-  .group__title::after {
-    top: 22px;
-  }
-
   .group__title::before {
     content: "";
     position: relative;
     top: 22px;
-    width: 30px;
+    min-width: 40px;
     height: 2px;
     background-color: $bg-color-secondary;
+  }
+
+  .group__title::after {
+    top: 22px;
+    min-width: 70px;
   }
 
   .group__title-wrapping {
@@ -156,6 +158,10 @@
   }
 
   .group__title::before {
-    width: 70px;
+    min-width: 70px;
+  }
+
+  .group__title::after {
+    min-width: 70px;
   }
 }

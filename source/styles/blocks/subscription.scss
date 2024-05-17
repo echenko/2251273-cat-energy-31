@@ -17,6 +17,7 @@
 .subscription__heading::after {
   content: "";
   position: relative;
+  min-width: 20px;
   height: 2px;
   flex-grow: 1;
   top: 10px;
@@ -50,13 +51,14 @@
     content: "";
     position: relative;
     top: 13px;
-    width: 30px;
+    min-width: 30px;
     height: 2px;
     background-color: $bg-color-secondary;
   }
 
   .subscription__heading::after {
     top: 13px;
+    min-width: 30px;
   }
 
   .subscription__text {
@@ -79,12 +81,13 @@
   }
 
   .subscription__heading::before {
-    width: 70px;
     top: 17px;
+    min-width: 70px;
   }
 
   .subscription__heading::after {
     top: 17px;
+    min-width: 70px;
   }
 
   .subscription__form {

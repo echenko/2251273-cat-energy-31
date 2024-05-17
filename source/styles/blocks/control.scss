@@ -89,10 +89,6 @@
   &:disabled {
     outline: none;
   }
-
-  &:invalid {
-    outline: 2px solid $decoration-color-error;
-  }
 }
 
 .control__input:focus-visible + .control__mark {
@@ -110,6 +106,10 @@
 
 .control__input--contacts {
   padding: 10px 42px 10px 14px;
+}
+
+.control__input--invalid {
+  outline: 2px solid $decoration-color-error;
 }
 
 .control__icon {
